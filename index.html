@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5ccc272ada7c49c6a033a01f46bd4313 {
+                #map_0a13a82e5597b170799081c4a7df0ad7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -60,7 +60,7 @@
 <body>
     
     
-<div style="
+<div id="disclaimer" style="
     position: fixed; 
     top: 10px; left: 60px; 
     background-color: white; 
@@ -68,21 +68,25 @@
     font-size: 14px; 
     border-radius: 5px; 
     box-shadow: 0px 0px 5px rgba(0,0,0,0.3); 
-    z-index: 1000;">
+    z-index: 1000;
+    max-width: 300px;
+">
+    <button onclick="document.getElementById('disclaimer').style.display='none'" 
+        style="position: absolute; top: 5px; right: 5px; border: none; background: none; font-size: 16px; cursor: pointer;">✖</button>
     ⚠️ <b>Внимание!</b><br>
     Эта карта создана на основе открытых данных и может быть неточной.<br>
     Официальные данные о запретных зонах смотрите на <a href="https://sppi.ans.kz" target="_blank">sppi.ans.kz</a>.
 </div>
     
-            <div class="folium-map" id="map_5ccc272ada7c49c6a033a01f46bd4313" ></div>
+            <div class="folium-map" id="map_0a13a82e5597b170799081c4a7df0ad7" ></div>
         
     <a href='#' id='export'>Export</a>
 </body>
 <script>
     
     
-            var map_5ccc272ada7c49c6a033a01f46bd4313 = L.map(
-                "map_5ccc272ada7c49c6a033a01f46bd4313",
+            var map_0a13a82e5597b170799081c4a7df0ad7 = L.map(
+                "map_0a13a82e5597b170799081c4a7df0ad7",
                 {
                     center: [48.0, 70.0],
                     crs: L.CRS.EPSG3857,
@@ -99,7 +103,7 @@
 
         
     
-            var tile_layer_289da3ad7be829a08f83a5d8fbbea83d = L.tileLayer(
+            var tile_layer_07b583102b0bb15e0d06c8bd42c3f0d2 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -116,2235 +120,2120 @@
             );
         
     
-            tile_layer_289da3ad7be829a08f83a5d8fbbea83d.addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            tile_layer_07b583102b0bb15e0d06c8bd42c3f0d2.addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-            var circle_de8eaed1dd884e6d0e094fa686163249 = L.circle(
+            var circle_ddc7dfd4074eeece274916c94f41e42b = L.circle(
                 [52.019444444444446, 70.83527777777778],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_3081a3307c873c9fc6429286b1ee00c4 = L.popup({
+        var popup_d8e11991785f19a53df25c196a15f7ed = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_1300f796bf09c674a3f9a29d54b4e7b1 = $(`<div id="html_1300f796bf09c674a3f9a29d54b4e7b1" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8100FT<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_3081a3307c873c9fc6429286b1ee00c4.setContent(html_1300f796bf09c674a3f9a29d54b4e7b1);
+                var html_7d7691622449923ccd2dd05d3b21c0fa = $(`<div id="html_7d7691622449923ccd2dd05d3b21c0fa" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8100FT<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_d8e11991785f19a53df25c196a15f7ed.setContent(html_7d7691622449923ccd2dd05d3b21c0fa);
             
         
 
-        circle_de8eaed1dd884e6d0e094fa686163249.bindPopup(popup_3081a3307c873c9fc6429286b1ee00c4)
+        circle_ddc7dfd4074eeece274916c94f41e42b.bindPopup(popup_d8e11991785f19a53df25c196a15f7ed)
         ;
 
         
     
     
-            var circle_6f71aef5f07b7273f72f1f6b65699fef = L.circle(
+            var circle_d50bd84d93824071cd36c50cbfd858a1 = L.circle(
                 [53.00138888888889, 70.4213888888889],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_15da68a2d8ccbb4a088cea0fd75bf135 = L.popup({
+        var popup_2a49bab1ac8e41870108588aef03dc8e = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_942a624bfd6ee35a0f2867df08e925cd = $(`<div id="html_942a624bfd6ee35a0f2867df08e925cd" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 9600FT<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_15da68a2d8ccbb4a088cea0fd75bf135.setContent(html_942a624bfd6ee35a0f2867df08e925cd);
+                var html_b476d1bf6fa689a1433cbe7fd0e64f7b = $(`<div id="html_b476d1bf6fa689a1433cbe7fd0e64f7b" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 9600FT<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_2a49bab1ac8e41870108588aef03dc8e.setContent(html_b476d1bf6fa689a1433cbe7fd0e64f7b);
             
         
 
-        circle_6f71aef5f07b7273f72f1f6b65699fef.bindPopup(popup_15da68a2d8ccbb4a088cea0fd75bf135)
+        circle_d50bd84d93824071cd36c50cbfd858a1.bindPopup(popup_2a49bab1ac8e41870108588aef03dc8e)
         ;
 
         
     
     
-            var circle_3f276c6867ef095e1b96c5c4b121fab4 = L.circle(
+            var circle_a0d3fcc1cd1b34059baf2de187b7810a = L.circle(
                 [43.15333333333333, 76.88416666666667],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_6e59df0c73f9bc9900bebe2f57318366 = L.popup({
+        var popup_a6dcc9101b8109e12e8485d910b52fff = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_442b83d23eef4e71963033b6d3f90e03 = $(`<div id="html_442b83d23eef4e71963033b6d3f90e03" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 140FL<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_6e59df0c73f9bc9900bebe2f57318366.setContent(html_442b83d23eef4e71963033b6d3f90e03);
+                var html_c624ee5b7f63147c76c537edb361b93e = $(`<div id="html_c624ee5b7f63147c76c537edb361b93e" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 140FL<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_a6dcc9101b8109e12e8485d910b52fff.setContent(html_c624ee5b7f63147c76c537edb361b93e);
             
         
 
-        circle_3f276c6867ef095e1b96c5c4b121fab4.bindPopup(popup_6e59df0c73f9bc9900bebe2f57318366)
+        circle_a0d3fcc1cd1b34059baf2de187b7810a.bindPopup(popup_a6dcc9101b8109e12e8485d910b52fff)
         ;
 
         
     
     
-            var circle_59e6c62c2b9c1e88d9fc062dc0f75c01 = L.circle(
+            var circle_c79c81bf6c5504944066e0603550889d = L.circle(
                 [43.68138888888889, 51.12222222222222],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_249cc925aacf3e6cfd1914b277f607b8 = L.popup({
+        var popup_66df19e883f742c526f89b4cc30e3312 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_9ab766c04ec8d4c13aa724282130d59a = $(`<div id="html_9ab766c04ec8d4c13aa724282130d59a" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 6700FT<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_249cc925aacf3e6cfd1914b277f607b8.setContent(html_9ab766c04ec8d4c13aa724282130d59a);
+                var html_cfc9e7e1d052f3b73c9f6bf748bd12f1 = $(`<div id="html_cfc9e7e1d052f3b73c9f6bf748bd12f1" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 6700FT<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_66df19e883f742c526f89b4cc30e3312.setContent(html_cfc9e7e1d052f3b73c9f6bf748bd12f1);
             
         
 
-        circle_59e6c62c2b9c1e88d9fc062dc0f75c01.bindPopup(popup_249cc925aacf3e6cfd1914b277f607b8)
+        circle_c79c81bf6c5504944066e0603550889d.bindPopup(popup_66df19e883f742c526f89b4cc30e3312)
         ;
 
         
     
     
-            var circle_a5344d6df02d4a89793738a6614b1f5c = L.circle(
+            var circle_98d58a3b0fa11437fca713c92b59239f = L.circle(
                 [43.61666666666667, 51.28333333333333],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_3d96f0d66a21ae7174f2f135e108f784 = L.popup({
+        var popup_bfcfe7b10dcb1e90bddd7aa1bed21369 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_276085f6a9b96f96fd5d0ad6b9efaac5 = $(`<div id="html_276085f6a9b96f96fd5d0ad6b9efaac5" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-6000 м<br><b>Абсолютная высота:</b> 200FL<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_3d96f0d66a21ae7174f2f135e108f784.setContent(html_276085f6a9b96f96fd5d0ad6b9efaac5);
+                var html_64d9b522ba9c1b6642c687c99ba928b9 = $(`<div id="html_64d9b522ba9c1b6642c687c99ba928b9" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-6000 м<br><b>Абсолютная высота:</b> 200FL<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_bfcfe7b10dcb1e90bddd7aa1bed21369.setContent(html_64d9b522ba9c1b6642c687c99ba928b9);
             
         
 
-        circle_a5344d6df02d4a89793738a6614b1f5c.bindPopup(popup_3d96f0d66a21ae7174f2f135e108f784)
+        circle_98d58a3b0fa11437fca713c92b59239f.bindPopup(popup_bfcfe7b10dcb1e90bddd7aa1bed21369)
         ;
 
         
     
     
-            var circle_e110a10d66eaaa79a30690af5143c18d = L.circle(
+            var circle_94f55fe412333317165ed623c360a464 = L.circle(
                 [50.744166666666665, 78.53999999999999],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_fc33d8da02b84fe9122bec6d99f60aaf = L.popup({
+        var popup_1ef77e076210f54173e91c28499d6383 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_7b74577cefd7db756bdb3cda46f12c3b = $(`<div id="html_7b74577cefd7db756bdb3cda46f12c3b" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-6000 м<br><b>Абсолютная высота:</b> 210FL<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_fc33d8da02b84fe9122bec6d99f60aaf.setContent(html_7b74577cefd7db756bdb3cda46f12c3b);
+                var html_2f13e635e16f74b358008f0b32bb183f = $(`<div id="html_2f13e635e16f74b358008f0b32bb183f" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-6000 м<br><b>Абсолютная высота:</b> 210FL<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_1ef77e076210f54173e91c28499d6383.setContent(html_2f13e635e16f74b358008f0b32bb183f);
             
         
 
-        circle_e110a10d66eaaa79a30690af5143c18d.bindPopup(popup_fc33d8da02b84fe9122bec6d99f60aaf)
+        circle_94f55fe412333317165ed623c360a464.bindPopup(popup_1ef77e076210f54173e91c28499d6383)
         ;
 
         
     
     
-            var circle_9c293ad359113d897d0854157dccfca9 = L.circle(
+            var circle_6591437516748ce42dc1734aa4ba5203 = L.circle(
                 [50.166666666666664, 78.39],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_5b0c9a7b3ecb11a469dde96cb9d83b9d = L.popup({
+        var popup_aadc2b1ddde3056efa5a328c47070c1d = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_376923d7c9b2a70a22ddb9de21557045 = $(`<div id="html_376923d7c9b2a70a22ddb9de21557045" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-6000 м<br><b>Абсолютная высота:</b> 210FL<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_5b0c9a7b3ecb11a469dde96cb9d83b9d.setContent(html_376923d7c9b2a70a22ddb9de21557045);
+                var html_f4cc9ba3181da1f9acab612bd52dce22 = $(`<div id="html_f4cc9ba3181da1f9acab612bd52dce22" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-6000 м<br><b>Абсолютная высота:</b> 210FL<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_aadc2b1ddde3056efa5a328c47070c1d.setContent(html_f4cc9ba3181da1f9acab612bd52dce22);
             
         
 
-        circle_9c293ad359113d897d0854157dccfca9.bindPopup(popup_5b0c9a7b3ecb11a469dde96cb9d83b9d)
+        circle_6591437516748ce42dc1734aa4ba5203.bindPopup(popup_aadc2b1ddde3056efa5a328c47070c1d)
         ;
 
         
     
     
-            var circle_3f898deedb146fb80f5dccdac8277cea = L.circle(
+            var circle_5a5305d332c48ab37752792c15026b2d = L.circle(
                 [50.51277777777778, 77.99083333333333],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_f5b9cff874921df04771998b8abd0119 = L.popup({
+        var popup_36200564a9785bdf59f9093ba2567c50 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_a62c21b7985c54cdbf7b57a671731e21 = $(`<div id="html_a62c21b7985c54cdbf7b57a671731e21" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-6000 м<br><b>Абсолютная высота:</b> 210FL<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_f5b9cff874921df04771998b8abd0119.setContent(html_a62c21b7985c54cdbf7b57a671731e21);
+                var html_d2e5279169da815d56e2ffe679c4a533 = $(`<div id="html_d2e5279169da815d56e2ffe679c4a533" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-6000 м<br><b>Абсолютная высота:</b> 210FL<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_36200564a9785bdf59f9093ba2567c50.setContent(html_d2e5279169da815d56e2ffe679c4a533);
             
         
 
-        circle_3f898deedb146fb80f5dccdac8277cea.bindPopup(popup_f5b9cff874921df04771998b8abd0119)
+        circle_5a5305d332c48ab37752792c15026b2d.bindPopup(popup_36200564a9785bdf59f9093ba2567c50)
         ;
 
         
     
     
-            var circle_39b7b43c323da47549101b2390d5bda8 = L.circle(
+            var circle_6a07da7ac79304391e8d7fc2c6e83638 = L.circle(
                 [51.0, 68.7],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_b02cdaabc6a47118272470153da96c13 = L.popup({
+        var popup_799c3f06e376ef3772cebba2e3c35e8f = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_ed3c042c6efe9141e45ee4d783040da2 = $(`<div id="html_ed3c042c6efe9141e45ee4d783040da2" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 120FL<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_b02cdaabc6a47118272470153da96c13.setContent(html_ed3c042c6efe9141e45ee4d783040da2);
+                var html_0243dac88c6abc8b367b565f7ba8aaa1 = $(`<div id="html_0243dac88c6abc8b367b565f7ba8aaa1" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 120FL<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_799c3f06e376ef3772cebba2e3c35e8f.setContent(html_0243dac88c6abc8b367b565f7ba8aaa1);
             
         
 
-        circle_39b7b43c323da47549101b2390d5bda8.bindPopup(popup_b02cdaabc6a47118272470153da96c13)
+        circle_6a07da7ac79304391e8d7fc2c6e83638.bindPopup(popup_799c3f06e376ef3772cebba2e3c35e8f)
         ;
 
         
     
     
-            var circle_1aab9100067696ea39bfb5eb7fd09f91 = L.circle(
+            var circle_40de421c664fa43946d127cdeba68558 = L.circle(
                 [50.56666666666667, 69.88333333333334],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_668a79ebc15ca70710d98f4dfc78a27f = L.popup({
+        var popup_ecd63e189b857dc18d35bcfff444f7ba = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_a842c97570b015be19cb7d4fcb2c8896 = $(`<div id="html_a842c97570b015be19cb7d4fcb2c8896" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 120FL<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_668a79ebc15ca70710d98f4dfc78a27f.setContent(html_a842c97570b015be19cb7d4fcb2c8896);
+                var html_8af24a43adb7ccfa30f2f6e8264206e6 = $(`<div id="html_8af24a43adb7ccfa30f2f6e8264206e6" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 120FL<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_ecd63e189b857dc18d35bcfff444f7ba.setContent(html_8af24a43adb7ccfa30f2f6e8264206e6);
             
         
 
-        circle_1aab9100067696ea39bfb5eb7fd09f91.bindPopup(popup_668a79ebc15ca70710d98f4dfc78a27f)
+        circle_40de421c664fa43946d127cdeba68558.bindPopup(popup_ecd63e189b857dc18d35bcfff444f7ba)
         ;
 
         
     
     
-            var circle_a76b42dca88c8c7de78ed39d936a9c5b = L.circle(
+            var circle_2c49525513b9ff68f6947fce4633687d = L.circle(
                 [47.26444444444444, 52.442499999999995],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_aef4c5916c878731bab01355bb2d7ebf = L.popup({
+        var popup_b7eedc878fee4f0d44dca311db1709d6 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_d3ad89f93f8b62b0f9f7607de53d4f76 = $(`<div id="html_d3ad89f93f8b62b0f9f7607de53d4f76" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 6600FT<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_aef4c5916c878731bab01355bb2d7ebf.setContent(html_d3ad89f93f8b62b0f9f7607de53d4f76);
+                var html_8fb208a856916b3b5bf8d3959eb34605 = $(`<div id="html_8fb208a856916b3b5bf8d3959eb34605" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 6600FT<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_b7eedc878fee4f0d44dca311db1709d6.setContent(html_8fb208a856916b3b5bf8d3959eb34605);
             
         
 
-        circle_a76b42dca88c8c7de78ed39d936a9c5b.bindPopup(popup_aef4c5916c878731bab01355bb2d7ebf)
+        circle_2c49525513b9ff68f6947fce4633687d.bindPopup(popup_b7eedc878fee4f0d44dca311db1709d6)
         ;
 
         
     
     
-            var circle_dffc05b897c21152124f001a0e0f73b5 = L.circle(
+            var circle_e41af4f0f6390e86852867a913dc4b83 = L.circle(
                 [52.003055555555555, 70.9],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_2863f809e131f8000812f8efddf30d40 = L.popup({
+        var popup_803b146d39f489ae61fa216b36b21769 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_856e16e75aea8a8b91d8956d1de8d6a0 = $(`<div id="html_856e16e75aea8a8b91d8956d1de8d6a0" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-1500 м<br><b>Абсолютная высота:</b> 6400FT<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_2863f809e131f8000812f8efddf30d40.setContent(html_856e16e75aea8a8b91d8956d1de8d6a0);
+                var html_80c4a5a071ac7021c380ee03d93607b5 = $(`<div id="html_80c4a5a071ac7021c380ee03d93607b5" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-1500 м<br><b>Абсолютная высота:</b> 6400FT<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_803b146d39f489ae61fa216b36b21769.setContent(html_80c4a5a071ac7021c380ee03d93607b5);
             
         
 
-        circle_dffc05b897c21152124f001a0e0f73b5.bindPopup(popup_2863f809e131f8000812f8efddf30d40)
+        circle_e41af4f0f6390e86852867a913dc4b83.bindPopup(popup_803b146d39f489ae61fa216b36b21769)
         ;
 
         
     
     
-            var circle_a13e29973d8147dbd2ba1f55cdc365b6 = L.circle(
+            var circle_4eb6ce3aa915fe4a4a07da992e127576 = L.circle(
                 [43.51027777777778, 77.01055555555556],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_d572b311788c1f658f2854b7ae9f7ad3 = L.popup({
+        var popup_35577370a4d1d6a32752ef7f938dddbc = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_76f2dacb31bc1f53474b78b39afe414a = $(`<div id="html_76f2dacb31bc1f53474b78b39afe414a" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3600FT<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_d572b311788c1f658f2854b7ae9f7ad3.setContent(html_76f2dacb31bc1f53474b78b39afe414a);
+                var html_6f55a7eafba460aec33634ed437ca5f2 = $(`<div id="html_6f55a7eafba460aec33634ed437ca5f2" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3600FT<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_35577370a4d1d6a32752ef7f938dddbc.setContent(html_6f55a7eafba460aec33634ed437ca5f2);
             
         
 
-        circle_a13e29973d8147dbd2ba1f55cdc365b6.bindPopup(popup_d572b311788c1f658f2854b7ae9f7ad3)
+        circle_4eb6ce3aa915fe4a4a07da992e127576.bindPopup(popup_35577370a4d1d6a32752ef7f938dddbc)
         ;
 
         
     
     
-            var circle_4021ab4af488c01e2ad3d59979a444ae = L.circle(
+            var circle_06efd12082b9a1e56de27d8d2c888643 = L.circle(
                 [51.12555555555556, 71.44611111111111],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_b4124bec2c298e1ce346a506a961051d = L.popup({
+        var popup_73582b50cd6e64440aa59e401a1195f3 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_341c421b4a7887a3c167bb9e286d4510 = $(`<div id="html_341c421b4a7887a3c167bb9e286d4510" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-1100 м<br><b>Абсолютная высота:</b> 4800FT<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_b4124bec2c298e1ce346a506a961051d.setContent(html_341c421b4a7887a3c167bb9e286d4510);
+                var html_f22733bdf62dbe610f51030f51090f20 = $(`<div id="html_f22733bdf62dbe610f51030f51090f20" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Запретная зона<br><b>Вертикальные границы:</b> 0-1100 м<br><b>Абсолютная высота:</b> 4800FT<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_73582b50cd6e64440aa59e401a1195f3.setContent(html_f22733bdf62dbe610f51030f51090f20);
             
         
 
-        circle_4021ab4af488c01e2ad3d59979a444ae.bindPopup(popup_b4124bec2c298e1ce346a506a961051d)
+        circle_06efd12082b9a1e56de27d8d2c888643.bindPopup(popup_73582b50cd6e64440aa59e401a1195f3)
         ;
 
         
     
     
-            var circle_b8038c1fbfdeff3f812a2643f2db43e4 = L.circle(
+            var circle_5cbb75086f843eab281f3b287ec6a75e = L.circle(
                 [43.01583333333333, 73.01138888888889],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_e824eef2aab5e3310503b651e6a05e8e = L.popup({
+        var popup_4c94fd8c77922f547bb95b9073b049c2 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_330094b970e68c142b43af31d69b8f05 = $(`<div id="html_330094b970e68c142b43af31d69b8f05" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8800FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_e824eef2aab5e3310503b651e6a05e8e.setContent(html_330094b970e68c142b43af31d69b8f05);
+                var html_3ef01e58e889f1bd5b9d238e82f756ad = $(`<div id="html_3ef01e58e889f1bd5b9d238e82f756ad" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8800FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_4c94fd8c77922f547bb95b9073b049c2.setContent(html_3ef01e58e889f1bd5b9d238e82f756ad);
             
         
 
-        circle_b8038c1fbfdeff3f812a2643f2db43e4.bindPopup(popup_e824eef2aab5e3310503b651e6a05e8e)
+        circle_5cbb75086f843eab281f3b287ec6a75e.bindPopup(popup_4c94fd8c77922f547bb95b9073b049c2)
         ;
 
         
     
     
-            var circle_34b37c318155c8996990048133a26ac2 = L.circle(
+            var circle_9441d949888577aad5bf436216470e95 = L.circle(
                 [52.45, 76.81666666666666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_eb3217aa177634b7f20db8051874c01c = L.popup({
+        var popup_46150da44ec80d9d311eb3d93003ae65 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_cbb202cd0659b579b84d0494393afb12 = $(`<div id="html_cbb202cd0659b579b84d0494393afb12" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 110FL<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
-                popup_eb3217aa177634b7f20db8051874c01c.setContent(html_cbb202cd0659b579b84d0494393afb12);
+                var html_3bcc87a957f94168982e5c8a405d6e6e = $(`<div id="html_3bcc87a957f94168982e5c8a405d6e6e" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 110FL<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
+                popup_46150da44ec80d9d311eb3d93003ae65.setContent(html_3bcc87a957f94168982e5c8a405d6e6e);
             
         
 
-        circle_34b37c318155c8996990048133a26ac2.bindPopup(popup_eb3217aa177634b7f20db8051874c01c)
+        circle_9441d949888577aad5bf436216470e95.bindPopup(popup_46150da44ec80d9d311eb3d93003ae65)
         ;
 
         
     
     
-            var circle_e10b2197bca7227b2d2e8db0a873d298 = L.circle(
+            var circle_877653db7b9c15bde11916ee2796acb1 = L.circle(
                 [46.733333333333334, 49.21666666666667],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_98ebf8d17db09c30a51235ec38fdc574 = L.popup({
+        var popup_fbff020937836e9083f70797bb981109 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_8c94a632dba7539c79e50c89247b8e9a = $(`<div id="html_8c94a632dba7539c79e50c89247b8e9a" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1050 м<br><b>Абсолютная высота:</b> 3400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_98ebf8d17db09c30a51235ec38fdc574.setContent(html_8c94a632dba7539c79e50c89247b8e9a);
+                var html_ed31784d6ffbbf8d19aab0aacfe6ff7f = $(`<div id="html_ed31784d6ffbbf8d19aab0aacfe6ff7f" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1050 м<br><b>Абсолютная высота:</b> 3400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_fbff020937836e9083f70797bb981109.setContent(html_ed31784d6ffbbf8d19aab0aacfe6ff7f);
             
         
 
-        circle_e10b2197bca7227b2d2e8db0a873d298.bindPopup(popup_98ebf8d17db09c30a51235ec38fdc574)
+        circle_877653db7b9c15bde11916ee2796acb1.bindPopup(popup_fbff020937836e9083f70797bb981109)
         ;
 
         
     
     
-            var circle_60fc97c01d40f94367ca07360920edef = L.circle(
+            var circle_2e182a6bc33c53a02010a5053d0f3a66 = L.circle(
                 [47.05, 51.96666666666667],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_c299c66a9c7fcdbd8426eb4103cba407 = L.popup({
+        var popup_2c232260734b595f35a5f793c9bf9fd9 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_cd1f9cbcbff4a74932d4eeb9b04a53d1 = $(`<div id="html_cd1f9cbcbff4a74932d4eeb9b04a53d1" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 3300FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_c299c66a9c7fcdbd8426eb4103cba407.setContent(html_cd1f9cbcbff4a74932d4eeb9b04a53d1);
+                var html_f12e5381a145057ece3041c6a2cff58a = $(`<div id="html_f12e5381a145057ece3041c6a2cff58a" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 3300FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_2c232260734b595f35a5f793c9bf9fd9.setContent(html_f12e5381a145057ece3041c6a2cff58a);
             
         
 
-        circle_60fc97c01d40f94367ca07360920edef.bindPopup(popup_c299c66a9c7fcdbd8426eb4103cba407)
+        circle_2e182a6bc33c53a02010a5053d0f3a66.bindPopup(popup_2c232260734b595f35a5f793c9bf9fd9)
         ;
 
         
     
     
-            var circle_f960bea0d2a010b57bd447e570bb1869 = L.circle(
+            var circle_a489bd671ffaf421e11891081bdf4889 = L.circle(
                 [47.32333333333334, 52.18722222222222],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_957f56991892281a3962c788da58a96d = L.popup({
+        var popup_b745861d95336fc79d55ae963fffd3cc = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_8a982a77ef351ca9f1b3e2da45ecd13e = $(`<div id="html_8a982a77ef351ca9f1b3e2da45ecd13e" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1050 м<br><b>Абсолютная высота:</b> 3400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_957f56991892281a3962c788da58a96d.setContent(html_8a982a77ef351ca9f1b3e2da45ecd13e);
+                var html_60baae511d5d7e9b9952b00da48733f9 = $(`<div id="html_60baae511d5d7e9b9952b00da48733f9" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1050 м<br><b>Абсолютная высота:</b> 3400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_b745861d95336fc79d55ae963fffd3cc.setContent(html_60baae511d5d7e9b9952b00da48733f9);
             
         
 
-        circle_f960bea0d2a010b57bd447e570bb1869.bindPopup(popup_957f56991892281a3962c788da58a96d)
+        circle_a489bd671ffaf421e11891081bdf4889.bindPopup(popup_b745861d95336fc79d55ae963fffd3cc)
         ;
 
         
     
     
-            var circle_1a6db9450e4ce80fd210ac96b801033e = L.circle(
+            var circle_dbfc0ce8c7ea6d75fef47c11285488de = L.circle(
                 [43.73166666666667, 77.01361111111112],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_98d05dec1847c8825b33d974f3f906a8 = L.popup({
+        var popup_9c2bb08365132f4c0b789f4b2628ab42 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_2261216aba5b0404e92b85bb4a0c48ba = $(`<div id="html_2261216aba5b0404e92b85bb4a0c48ba" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 120FL<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_98d05dec1847c8825b33d974f3f906a8.setContent(html_2261216aba5b0404e92b85bb4a0c48ba);
+                var html_cf5d9f5cb54fe50fc0c5a1881fb82063 = $(`<div id="html_cf5d9f5cb54fe50fc0c5a1881fb82063" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 120FL<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_9c2bb08365132f4c0b789f4b2628ab42.setContent(html_cf5d9f5cb54fe50fc0c5a1881fb82063);
             
         
 
-        circle_1a6db9450e4ce80fd210ac96b801033e.bindPopup(popup_98d05dec1847c8825b33d974f3f906a8)
+        circle_dbfc0ce8c7ea6d75fef47c11285488de.bindPopup(popup_9c2bb08365132f4c0b789f4b2628ab42)
         ;
 
         
     
     
-            var circle_4b4dd37b7a235cfe13e97dbc61899273 = L.circle(
+            var circle_30d365624b8f8b62c7bc1f70b2a96537 = L.circle(
                 [51.28333333333333, 71.48333333333333],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_8e25cdaf6c94c4d5c2173584e18a10c3 = L.popup({
+        var popup_f77880a99b3035ebc1ad83eeb02f5812 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_99267873373e5d89a662f0956cb0a9fa = $(`<div id="html_99267873373e5d89a662f0956cb0a9fa" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_8e25cdaf6c94c4d5c2173584e18a10c3.setContent(html_99267873373e5d89a662f0956cb0a9fa);
+                var html_694430429c06a627d94a1fbac5d677fb = $(`<div id="html_694430429c06a627d94a1fbac5d677fb" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_f77880a99b3035ebc1ad83eeb02f5812.setContent(html_694430429c06a627d94a1fbac5d677fb);
             
         
 
-        circle_4b4dd37b7a235cfe13e97dbc61899273.bindPopup(popup_8e25cdaf6c94c4d5c2173584e18a10c3)
+        circle_30d365624b8f8b62c7bc1f70b2a96537.bindPopup(popup_f77880a99b3035ebc1ad83eeb02f5812)
         ;
 
         
     
     
-            var circle_e334194440c0db8e9c8e908caa94ceee = L.circle(
+            var circle_8f84d21a31eafc926133c1444eba7ee5 = L.circle(
                 [48.564166666666665, 58.47916666666667],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_e529eb096e8da4fa92e727dfa23bf76e = L.popup({
+        var popup_e4f4cc16c3921a320efb5c9c970b0907 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_7f583546157a44ee83ed3280e6be5f5e = $(`<div id="html_7f583546157a44ee83ed3280e6be5f5e" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_e529eb096e8da4fa92e727dfa23bf76e.setContent(html_7f583546157a44ee83ed3280e6be5f5e);
+                var html_407d49073a87eab4c487d1d64362d4ef = $(`<div id="html_407d49073a87eab4c487d1d64362d4ef" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_e4f4cc16c3921a320efb5c9c970b0907.setContent(html_407d49073a87eab4c487d1d64362d4ef);
             
         
 
-        circle_e334194440c0db8e9c8e908caa94ceee.bindPopup(popup_e529eb096e8da4fa92e727dfa23bf76e)
+        circle_8f84d21a31eafc926133c1444eba7ee5.bindPopup(popup_e4f4cc16c3921a320efb5c9c970b0907)
         ;
 
         
     
     
-            var circle_d449c2c9e59371529ffc37f1974305b8 = L.circle(
+            var circle_95adf26b47ca8b862d26690918c92954 = L.circle(
                 [50.893055555555556, 58.48888888888889],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_0c276cdb0f3c6121092f3d436785de52 = L.popup({
+        var popup_707cf6d9578df3a397e4b99fd1abe794 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_2a23812b2aa31a38702fbeaabf5b12e1 = $(`<div id="html_2a23812b2aa31a38702fbeaabf5b12e1" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3000FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_0c276cdb0f3c6121092f3d436785de52.setContent(html_2a23812b2aa31a38702fbeaabf5b12e1);
+                var html_ff944a3b3a5a61e04155bea81f630f26 = $(`<div id="html_ff944a3b3a5a61e04155bea81f630f26" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3000FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_707cf6d9578df3a397e4b99fd1abe794.setContent(html_ff944a3b3a5a61e04155bea81f630f26);
             
         
 
-        circle_d449c2c9e59371529ffc37f1974305b8.bindPopup(popup_0c276cdb0f3c6121092f3d436785de52)
+        circle_95adf26b47ca8b862d26690918c92954.bindPopup(popup_707cf6d9578df3a397e4b99fd1abe794)
         ;
 
         
     
     
-            var circle_0f7049a22ec97c14b03541f0cf663d4b = L.circle(
+            var circle_12290a5b9ad000af7d914454a9f20e09 = L.circle(
                 [52.163888888888884, 61.31333333333333],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_83bfe01d688fba64c719ad6b96b0c736 = L.popup({
+        var popup_50b6a5b808a05c8225707025b861dd71 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_0f336da6fad4bb1999a9be4876af1bbd = $(`<div id="html_0f336da6fad4bb1999a9be4876af1bbd" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2800FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_83bfe01d688fba64c719ad6b96b0c736.setContent(html_0f336da6fad4bb1999a9be4876af1bbd);
+                var html_9317c817aa30559b2d169b78fd6f330e = $(`<div id="html_9317c817aa30559b2d169b78fd6f330e" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2800FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_50b6a5b808a05c8225707025b861dd71.setContent(html_9317c817aa30559b2d169b78fd6f330e);
             
         
 
-        circle_0f7049a22ec97c14b03541f0cf663d4b.bindPopup(popup_83bfe01d688fba64c719ad6b96b0c736)
+        circle_12290a5b9ad000af7d914454a9f20e09.bindPopup(popup_50b6a5b808a05c8225707025b861dd71)
         ;
 
         
     
     
-            var circle_d9af27a20fa32174f77440927baea4c0 = L.circle(
+            var circle_cd7831a99b2ba33c58b6bc62b7ccf23b = L.circle(
                 [50.36388888888889, 57.56666666666667],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_4c4306d8cc31ebce18a774f1ad789304 = L.popup({
+        var popup_9f8fa4f0d8cf4eab24f307842d4b5908 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_17a9e3f620d2a18afbfc9e41e4e48fe0 = $(`<div id="html_17a9e3f620d2a18afbfc9e41e4e48fe0" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_4c4306d8cc31ebce18a774f1ad789304.setContent(html_17a9e3f620d2a18afbfc9e41e4e48fe0);
+                var html_f27e1b9b9f9fd8c817db2ea3e85e74c8 = $(`<div id="html_f27e1b9b9f9fd8c817db2ea3e85e74c8" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_9f8fa4f0d8cf4eab24f307842d4b5908.setContent(html_f27e1b9b9f9fd8c817db2ea3e85e74c8);
             
         
 
-        circle_d9af27a20fa32174f77440927baea4c0.bindPopup(popup_4c4306d8cc31ebce18a774f1ad789304)
+        circle_cd7831a99b2ba33c58b6bc62b7ccf23b.bindPopup(popup_9f8fa4f0d8cf4eab24f307842d4b5908)
         ;
 
         
     
     
-            var circle_323cc99ba5dc1562cd7747f2973928c3 = L.circle(
+            var circle_0d32db0f3148f5bea4a4c1322995bf8e = L.circle(
                 [50.48027777777778, 59.106944444444444],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_8885e4235689cf62f9093552ccadf372 = L.popup({
+        var popup_8e30d9a7681b0dbd0b8ce25ff6b7c4c9 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_4b790611265f6495a0a8184b6fade8d0 = $(`<div id="html_4b790611265f6495a0a8184b6fade8d0" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-300 м<br><b>Абсолютная высота:</b> 2000FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_8885e4235689cf62f9093552ccadf372.setContent(html_4b790611265f6495a0a8184b6fade8d0);
+                var html_55cf1eea866554032c9fe5ccc729ec35 = $(`<div id="html_55cf1eea866554032c9fe5ccc729ec35" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-300 м<br><b>Абсолютная высота:</b> 2000FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_8e30d9a7681b0dbd0b8ce25ff6b7c4c9.setContent(html_55cf1eea866554032c9fe5ccc729ec35);
             
         
 
-        circle_323cc99ba5dc1562cd7747f2973928c3.bindPopup(popup_8885e4235689cf62f9093552ccadf372)
+        circle_0d32db0f3148f5bea4a4c1322995bf8e.bindPopup(popup_8e30d9a7681b0dbd0b8ce25ff6b7c4c9)
         ;
 
         
     
     
-            var circle_7f9819874822572e14065195369fda44 = L.circle(
+            var circle_9b04657494a3a8e6fbf5be63511d74fd = L.circle(
                 [50.547777777777775, 59.013333333333335],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_4710def8018035f0b1323782b902362a = L.popup({
+        var popup_da6088e667e95b3393cee98d7e35e444 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_0a34c1f32120344fcc4567100e324b8d = $(`<div id="html_0a34c1f32120344fcc4567100e324b8d" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-300 м<br><b>Абсолютная высота:</b> 2000FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_4710def8018035f0b1323782b902362a.setContent(html_0a34c1f32120344fcc4567100e324b8d);
+                var html_0cc809dd0be3fb3eb0bc28b1f0a512e0 = $(`<div id="html_0cc809dd0be3fb3eb0bc28b1f0a512e0" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-300 м<br><b>Абсолютная высота:</b> 2000FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_da6088e667e95b3393cee98d7e35e444.setContent(html_0cc809dd0be3fb3eb0bc28b1f0a512e0);
             
         
 
-        circle_7f9819874822572e14065195369fda44.bindPopup(popup_4710def8018035f0b1323782b902362a)
+        circle_9b04657494a3a8e6fbf5be63511d74fd.bindPopup(popup_da6088e667e95b3393cee98d7e35e444)
         ;
 
         
     
     
-            var circle_8da271083af86a5d16896d7ab457b2c8 = L.circle(
+            var circle_dc96e86af49dfee37a1b6dabc95caa13 = L.circle(
                 [50.29611111111111, 58.4575],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_464d43dd6394f3bc25beb5b0a42b6491 = L.popup({
+        var popup_ae10d4133968364dea98ac3b5477436f = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_80c9c3046fbebb53823a5b6547d74175 = $(`<div id="html_80c9c3046fbebb53823a5b6547d74175" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_464d43dd6394f3bc25beb5b0a42b6491.setContent(html_80c9c3046fbebb53823a5b6547d74175);
+                var html_be3f1dd7c6a5d0226fff70a70170ce66 = $(`<div id="html_be3f1dd7c6a5d0226fff70a70170ce66" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_ae10d4133968364dea98ac3b5477436f.setContent(html_be3f1dd7c6a5d0226fff70a70170ce66);
             
         
 
-        circle_8da271083af86a5d16896d7ab457b2c8.bindPopup(popup_464d43dd6394f3bc25beb5b0a42b6491)
+        circle_dc96e86af49dfee37a1b6dabc95caa13.bindPopup(popup_ae10d4133968364dea98ac3b5477436f)
         ;
 
         
     
     
-            var circle_8003d7d6e4e59735c1c877be48e94816 = L.circle(
+            var circle_d75c05dc123f8c1b94429286aee2c66e = L.circle(
                 [48.36666666666667, 70.31666666666666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_5d5df9ac02e29561d15f430861f329a3 = L.popup({
+        var popup_20a4d022d1268c7c188cff2360ccea5f = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_73532a18492d1fec9d5bef5914e54f7a = $(`<div id="html_73532a18492d1fec9d5bef5914e54f7a" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_5d5df9ac02e29561d15f430861f329a3.setContent(html_73532a18492d1fec9d5bef5914e54f7a);
+                var html_d176aa4dc9b5b795fcd8a620c5ae7f4c = $(`<div id="html_d176aa4dc9b5b795fcd8a620c5ae7f4c" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_20a4d022d1268c7c188cff2360ccea5f.setContent(html_d176aa4dc9b5b795fcd8a620c5ae7f4c);
             
         
 
-        circle_8003d7d6e4e59735c1c877be48e94816.bindPopup(popup_5d5df9ac02e29561d15f430861f329a3)
+        circle_d75c05dc123f8c1b94429286aee2c66e.bindPopup(popup_20a4d022d1268c7c188cff2360ccea5f)
         ;
 
         
     
     
-            var circle_92c1571b3522d0e81d9f4592259c60c3 = L.circle(
+            var circle_3fff02d2109020609641d783b7d047e7 = L.circle(
                 [48.15, 70.08333333333333],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_16dd21358b1d9588f1f2477ba98df093 = L.popup({
+        var popup_d9887f37cdc2a1f370547386a19bd030 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_2d0c3777009bab54aeecec375a6abeea = $(`<div id="html_2d0c3777009bab54aeecec375a6abeea" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3000FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_16dd21358b1d9588f1f2477ba98df093.setContent(html_2d0c3777009bab54aeecec375a6abeea);
+                var html_4dbc1402734ef35fded47dcbe4ad2cb5 = $(`<div id="html_4dbc1402734ef35fded47dcbe4ad2cb5" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3000FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_d9887f37cdc2a1f370547386a19bd030.setContent(html_4dbc1402734ef35fded47dcbe4ad2cb5);
             
         
 
-        circle_92c1571b3522d0e81d9f4592259c60c3.bindPopup(popup_16dd21358b1d9588f1f2477ba98df093)
+        circle_3fff02d2109020609641d783b7d047e7.bindPopup(popup_d9887f37cdc2a1f370547386a19bd030)
         ;
 
         
     
     
-            var circle_031225b821e8591f8efcaa2b707b45d3 = L.circle(
+            var circle_6cd050cf773bead08df252cc0f1553ae = L.circle(
                 [48.14722222222222, 71.3086111111111],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_57b65e749b70bc9167aa42d0d649f688 = L.popup({
+        var popup_75ce4c40e39bdf4d5cdd1887ea6e5d35 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_109796076eac36dae693f2b06e1115d2 = $(`<div id="html_109796076eac36dae693f2b06e1115d2" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_57b65e749b70bc9167aa42d0d649f688.setContent(html_109796076eac36dae693f2b06e1115d2);
+                var html_9ecf2be381da033b497404befc6d53de = $(`<div id="html_9ecf2be381da033b497404befc6d53de" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_75ce4c40e39bdf4d5cdd1887ea6e5d35.setContent(html_9ecf2be381da033b497404befc6d53de);
             
         
 
-        circle_031225b821e8591f8efcaa2b707b45d3.bindPopup(popup_57b65e749b70bc9167aa42d0d649f688)
+        circle_6cd050cf773bead08df252cc0f1553ae.bindPopup(popup_75ce4c40e39bdf4d5cdd1887ea6e5d35)
         ;
 
         
     
     
-            var circle_db686515ea3c3a2d286d353279f75b2d = L.circle(
+            var circle_5175513b0b464fe47110721415f09de7 = L.circle(
                 [47.833333333333336, 67.75],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_7c198db98a958b7fe2ee2efb09dd727b = L.popup({
+        var popup_a151d6d86cbefcdbd54dce3ede902c05 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_e62ca1888f815cf94d61b671fd06c278 = $(`<div id="html_e62ca1888f815cf94d61b671fd06c278" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2900FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
-                popup_7c198db98a958b7fe2ee2efb09dd727b.setContent(html_e62ca1888f815cf94d61b671fd06c278);
+                var html_ff76ff62c73fbc26b8a8c322c746d1e0 = $(`<div id="html_ff76ff62c73fbc26b8a8c322c746d1e0" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2900FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
+                popup_a151d6d86cbefcdbd54dce3ede902c05.setContent(html_ff76ff62c73fbc26b8a8c322c746d1e0);
             
         
 
-        circle_db686515ea3c3a2d286d353279f75b2d.bindPopup(popup_7c198db98a958b7fe2ee2efb09dd727b)
+        circle_5175513b0b464fe47110721415f09de7.bindPopup(popup_a151d6d86cbefcdbd54dce3ede902c05)
         ;
 
         
     
     
-            var circle_619c6f2b72a99f48d3862562e331b5f5 = L.circle(
+            var circle_3e9d22a2972f6b66a19d177eb22f2661 = L.circle(
                 [47.8, 67.88333333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_516f8db67ee8d1d83a55cb2f981205e9 = L.popup({
+        var popup_f7f24408d17c8733bbf7eb579ffa02b4 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_3e6885e93b946dd02c73644c9f68a748 = $(`<div id="html_3e6885e93b946dd02c73644c9f68a748" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2600FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
-                popup_516f8db67ee8d1d83a55cb2f981205e9.setContent(html_3e6885e93b946dd02c73644c9f68a748);
+                var html_f619c86bf710ce5be65b925d841f0746 = $(`<div id="html_f619c86bf710ce5be65b925d841f0746" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2600FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
+                popup_f7f24408d17c8733bbf7eb579ffa02b4.setContent(html_f619c86bf710ce5be65b925d841f0746);
             
         
 
-        circle_619c6f2b72a99f48d3862562e331b5f5.bindPopup(popup_516f8db67ee8d1d83a55cb2f981205e9)
+        circle_3e9d22a2972f6b66a19d177eb22f2661.bindPopup(popup_f7f24408d17c8733bbf7eb579ffa02b4)
         ;
 
         
     
     
-            var circle_23e1bf5749b79caf39edb696d3ef1782 = L.circle(
+            var circle_27b5a20fc89b4f52d09d4dab9fd0993c = L.circle(
                 [42.1, 69.75],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_2914026041e4f228248e697fb744c037 = L.popup({
+        var popup_d509d8451820b589b2d2bbb538b6b061 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_609412f6b0c923bc758241c1a878d030 = $(`<div id="html_609412f6b0c923bc758241c1a878d030" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 8100FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
-                popup_2914026041e4f228248e697fb744c037.setContent(html_609412f6b0c923bc758241c1a878d030);
+                var html_21b167ec2c55af08774faf4c404a9886 = $(`<div id="html_21b167ec2c55af08774faf4c404a9886" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 8100FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
+                popup_d509d8451820b589b2d2bbb538b6b061.setContent(html_21b167ec2c55af08774faf4c404a9886);
             
         
 
-        circle_23e1bf5749b79caf39edb696d3ef1782.bindPopup(popup_2914026041e4f228248e697fb744c037)
+        circle_27b5a20fc89b4f52d09d4dab9fd0993c.bindPopup(popup_d509d8451820b589b2d2bbb538b6b061)
         ;
 
         
     
     
-            var circle_ce727a153769734cafd8b5f54ecbad6c = L.circle(
+            var circle_16cde86e9fe79f471b30b90f572e2b1d = L.circle(
                 [42.5, 70.18333333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_64fa778cd6845f2e5bdf860d3844c657 = L.popup({
+        var popup_6ca18cc177c99178b4ba7e892f92b087 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_29c0e0d39ffbaa226a5434d2a6e3be45 = $(`<div id="html_29c0e0d39ffbaa226a5434d2a6e3be45" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 7500FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
-                popup_64fa778cd6845f2e5bdf860d3844c657.setContent(html_29c0e0d39ffbaa226a5434d2a6e3be45);
+                var html_431b75e131f4c0e9560ccc5838c68203 = $(`<div id="html_431b75e131f4c0e9560ccc5838c68203" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 7500FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
+                popup_6ca18cc177c99178b4ba7e892f92b087.setContent(html_431b75e131f4c0e9560ccc5838c68203);
             
         
 
-        circle_ce727a153769734cafd8b5f54ecbad6c.bindPopup(popup_64fa778cd6845f2e5bdf860d3844c657)
+        circle_16cde86e9fe79f471b30b90f572e2b1d.bindPopup(popup_6ca18cc177c99178b4ba7e892f92b087)
         ;
 
         
     
     
-            var circle_b0e05065699f255fa3aef7b2054d1830 = L.circle(
+            var circle_3c4e7f23b2fdc0f02693a851aeb05b4f = L.circle(
                 [51.81861111111112, 75.63805555555557],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_082a3f54f2f69c5f13edd3fbacd8344a = L.popup({
+        var popup_25e5385eeb21cc6ea156bd36256363d3 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_c810deceafae33e064dd8f68df486bfa = $(`<div id="html_c810deceafae33e064dd8f68df486bfa" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 3900FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
-                popup_082a3f54f2f69c5f13edd3fbacd8344a.setContent(html_c810deceafae33e064dd8f68df486bfa);
+                var html_4e2b79434cd3e0b8c7909a9f460adec6 = $(`<div id="html_4e2b79434cd3e0b8c7909a9f460adec6" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 3900FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
+                popup_25e5385eeb21cc6ea156bd36256363d3.setContent(html_4e2b79434cd3e0b8c7909a9f460adec6);
             
         
 
-        circle_b0e05065699f255fa3aef7b2054d1830.bindPopup(popup_082a3f54f2f69c5f13edd3fbacd8344a)
+        circle_3c4e7f23b2fdc0f02693a851aeb05b4f.bindPopup(popup_25e5385eeb21cc6ea156bd36256363d3)
         ;
 
         
     
     
-            var circle_e7df4f4f9fbb6fb6ce26345fa2900f7f = L.circle(
+            var circle_4a02c0cdfc2fcb95b300cd61311ceca4 = L.circle(
                 [51.453611111111115, 75.66055555555556],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_e4a0474bee6d5098328457eeaaab51ea = L.popup({
+        var popup_6968ba892f43d1c85a27d62d71272312 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_6428be2b4870c99738658344c4b26ede = $(`<div id="html_6428be2b4870c99738658344c4b26ede" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_e4a0474bee6d5098328457eeaaab51ea.setContent(html_6428be2b4870c99738658344c4b26ede);
+                var html_a8e9656662cf4995a05399b7dd43f7e5 = $(`<div id="html_a8e9656662cf4995a05399b7dd43f7e5" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_6968ba892f43d1c85a27d62d71272312.setContent(html_a8e9656662cf4995a05399b7dd43f7e5);
             
         
 
-        circle_e7df4f4f9fbb6fb6ce26345fa2900f7f.bindPopup(popup_e4a0474bee6d5098328457eeaaab51ea)
+        circle_4a02c0cdfc2fcb95b300cd61311ceca4.bindPopup(popup_6968ba892f43d1c85a27d62d71272312)
         ;
 
         
     
     
-            var circle_6c88283df1a92bc753b74eeb15e83972 = L.circle(
+            var circle_d3ce45119d2de4e3c74b39ae7133cb6a = L.circle(
                 [51.62555555555556, 75.41166666666668],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_8a888609732d0ea401a24a13c77f13bf = L.popup({
+        var popup_bf15463f492d5f40f2ac9bba36066940 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_c83a9d18479d81acdcca112a242dad50 = $(`<div id="html_c83a9d18479d81acdcca112a242dad50" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4200FT<br><b>Время работы:</b> Два раза в месяц, с 07.00 до 11.30</div>`)[0];
-                popup_8a888609732d0ea401a24a13c77f13bf.setContent(html_c83a9d18479d81acdcca112a242dad50);
+                var html_6f0a51ee0ec08691e3c0adaf1a5bc2e0 = $(`<div id="html_6f0a51ee0ec08691e3c0adaf1a5bc2e0" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4200FT<br><b>Время работы:</b> Два раза в месяц, с 07.00 до 11.30</div>`)[0];
+                popup_bf15463f492d5f40f2ac9bba36066940.setContent(html_6f0a51ee0ec08691e3c0adaf1a5bc2e0);
             
         
 
-        circle_6c88283df1a92bc753b74eeb15e83972.bindPopup(popup_8a888609732d0ea401a24a13c77f13bf)
+        circle_d3ce45119d2de4e3c74b39ae7133cb6a.bindPopup(popup_bf15463f492d5f40f2ac9bba36066940)
         ;
 
         
     
     
-            var circle_fd8903c5cf4331fdac5387eec7101176 = L.circle(
+            var circle_c65d9fb453c6c17fec4f50a500b9611c = L.circle(
                 [51.24638888888889, 75.63527777777779],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_5f3abd921d314cbb27d1f6117e1c4165 = L.popup({
+        var popup_e7df3bee3172348439353d0ce8476862 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_51d36ab5322f00a1d71a5ed0128dbe60 = $(`<div id="html_51d36ab5322f00a1d71a5ed0128dbe60" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_5f3abd921d314cbb27d1f6117e1c4165.setContent(html_51d36ab5322f00a1d71a5ed0128dbe60);
+                var html_1bc8611204e4b1bc6866cd11bc7955f7 = $(`<div id="html_1bc8611204e4b1bc6866cd11bc7955f7" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_e7df3bee3172348439353d0ce8476862.setContent(html_1bc8611204e4b1bc6866cd11bc7955f7);
             
         
 
-        circle_fd8903c5cf4331fdac5387eec7101176.bindPopup(popup_5f3abd921d314cbb27d1f6117e1c4165)
+        circle_c65d9fb453c6c17fec4f50a500b9611c.bindPopup(popup_e7df3bee3172348439353d0ce8476862)
         ;
 
         
     
     
-            var circle_8ee2d69fa6a2d30b5c7d27dcf49cba40 = L.circle(
+            var circle_d8a65d9a029db7e200b3927a734ca110 = L.circle(
                 [49.63611111111111, 83.64722222222223],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1850, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_d81d797727fe649514b8e3c69a153aa9 = L.popup({
+        var popup_6f77b2940852db19c3760106d1ae6170 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_88c09920bacf2a9e8f474f0b9beae972 = $(`<div id="html_88c09920bacf2a9e8f474f0b9beae972" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1466 м<br><b>Абсолютная высота:</b> 4400 FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
-                popup_d81d797727fe649514b8e3c69a153aa9.setContent(html_88c09920bacf2a9e8f474f0b9beae972);
+                var html_1c3b3842be244825f445880123953c84 = $(`<div id="html_1c3b3842be244825f445880123953c84" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1466 м<br><b>Абсолютная высота:</b> 4400 FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
+                popup_6f77b2940852db19c3760106d1ae6170.setContent(html_1c3b3842be244825f445880123953c84);
             
         
 
-        circle_8ee2d69fa6a2d30b5c7d27dcf49cba40.bindPopup(popup_d81d797727fe649514b8e3c69a153aa9)
+        circle_d8a65d9a029db7e200b3927a734ca110.bindPopup(popup_6f77b2940852db19c3760106d1ae6170)
         ;
 
         
     
     
-            var circle_0c7fe936cbb1887b4006b7a452132fbf = L.circle(
+            var circle_6cd954f3a7d792d9cc6f83585279019a = L.circle(
                 [50.0, 78.75],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_5e1d41ce273c2deaeeee8495ca0fd944 = L.popup({
+        var popup_69ce115c798686c4079d1cee8eee85da = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_18242b3c5d22794e662deefa86883a04 = $(`<div id="html_18242b3c5d22794e662deefa86883a04" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2800FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
-                popup_5e1d41ce273c2deaeeee8495ca0fd944.setContent(html_18242b3c5d22794e662deefa86883a04);
+                var html_48509b2c38d5cf0cbbdc95fb1d472093 = $(`<div id="html_48509b2c38d5cf0cbbdc95fb1d472093" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2800FT<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
+                popup_69ce115c798686c4079d1cee8eee85da.setContent(html_48509b2c38d5cf0cbbdc95fb1d472093);
             
         
 
-        circle_0c7fe936cbb1887b4006b7a452132fbf.bindPopup(popup_5e1d41ce273c2deaeeee8495ca0fd944)
+        circle_6cd954f3a7d792d9cc6f83585279019a.bindPopup(popup_69ce115c798686c4079d1cee8eee85da)
         ;
 
         
     
     
-            var circle_73ee9bf2f23c80d2397dfbc5b7fea8b5 = L.circle(
+            var circle_a50974e9a3da08a3df25245e4679ceb4 = L.circle(
                 [49.791666666666664, 80.86666666666666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_0dd08d718a9c45d806e6dc696a51b6b0 = L.popup({
+        var popup_f7fadedde856b411877700926d66a733 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_aa90b7c22073c28c1c5b262a4d435694 = $(`<div id="html_aa90b7c22073c28c1c5b262a4d435694" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1200 м<br><b>Абсолютная высота:</b> 5500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_0dd08d718a9c45d806e6dc696a51b6b0.setContent(html_aa90b7c22073c28c1c5b262a4d435694);
+                var html_539e81d04eaccdfa9c4ebcae3230cc8c = $(`<div id="html_539e81d04eaccdfa9c4ebcae3230cc8c" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1200 м<br><b>Абсолютная высота:</b> 5500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_f7fadedde856b411877700926d66a733.setContent(html_539e81d04eaccdfa9c4ebcae3230cc8c);
             
         
 
-        circle_73ee9bf2f23c80d2397dfbc5b7fea8b5.bindPopup(popup_0dd08d718a9c45d806e6dc696a51b6b0)
+        circle_a50974e9a3da08a3df25245e4679ceb4.bindPopup(popup_f7fadedde856b411877700926d66a733)
         ;
 
         
     
     
-            var circle_7ea5051600ca91d98f78f9b15b377936 = L.circle(
+            var circle_8df818e4d2c1f892d75f6cf068f519a7 = L.circle(
                 [49.867222222222225, 78.03138888888888],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_943651499c2993dcf7885c18d093b689 = L.popup({
+        var popup_7bdff375ebf9e5e2d2f5697340bf12cf = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_f2b7de5324c1f3eddd1deeb6eaf92123 = $(`<div id="html_f2b7de5324c1f3eddd1deeb6eaf92123" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_943651499c2993dcf7885c18d093b689.setContent(html_f2b7de5324c1f3eddd1deeb6eaf92123);
+                var html_18024dcce0cb1efd5f177344cfb53328 = $(`<div id="html_18024dcce0cb1efd5f177344cfb53328" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_7bdff375ebf9e5e2d2f5697340bf12cf.setContent(html_18024dcce0cb1efd5f177344cfb53328);
             
         
 
-        circle_7ea5051600ca91d98f78f9b15b377936.bindPopup(popup_943651499c2993dcf7885c18d093b689)
+        circle_8df818e4d2c1f892d75f6cf068f519a7.bindPopup(popup_7bdff375ebf9e5e2d2f5697340bf12cf)
         ;
 
         
     
     
-            var circle_74fa948bbb759b73e02fcf2a70b3604b = L.circle(
+            var circle_781fc0eac9c052ddf22f0bc190e191a3 = L.circle(
                 [47.833333333333336, 67.38333333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_a65f0947bb47818916b41480cc4c572a = L.popup({
+        var popup_73c0d32c2708a86568f1dd87adf7f9ed = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_84c4a3a45bf27bab53f4896ffb0d695f = $(`<div id="html_84c4a3a45bf27bab53f4896ffb0d695f" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_a65f0947bb47818916b41480cc4c572a.setContent(html_84c4a3a45bf27bab53f4896ffb0d695f);
+                var html_d1a86208c7834610b59828ed648455d4 = $(`<div id="html_d1a86208c7834610b59828ed648455d4" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_73c0d32c2708a86568f1dd87adf7f9ed.setContent(html_d1a86208c7834610b59828ed648455d4);
             
         
 
-        circle_74fa948bbb759b73e02fcf2a70b3604b.bindPopup(popup_a65f0947bb47818916b41480cc4c572a)
+        circle_781fc0eac9c052ddf22f0bc190e191a3.bindPopup(popup_73c0d32c2708a86568f1dd87adf7f9ed)
         ;
 
         
     
     
-            var circle_f7248cd5bf6efae1df350bcc3768a02d = L.circle(
+            var circle_f3dab610862df52289a32cd5295fc597 = L.circle(
                 [44.92222222222222, 78.58333333333333],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_86893792f71fd404413fcce21c15a085 = L.popup({
+        var popup_c7bcfa6098d46fbc034651b0d1c7e6e6 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_cc82486f950da019dc7785ad239f6d5c = $(`<div id="html_cc82486f950da019dc7785ad239f6d5c" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1850 м<br><b>Абсолютная высота:</b> 9700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_86893792f71fd404413fcce21c15a085.setContent(html_cc82486f950da019dc7785ad239f6d5c);
+                var html_3379599918a205f6d32c7338b288a178 = $(`<div id="html_3379599918a205f6d32c7338b288a178" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1850 м<br><b>Абсолютная высота:</b> 9700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_c7bcfa6098d46fbc034651b0d1c7e6e6.setContent(html_3379599918a205f6d32c7338b288a178);
             
         
 
-        circle_f7248cd5bf6efae1df350bcc3768a02d.bindPopup(popup_86893792f71fd404413fcce21c15a085)
+        circle_f3dab610862df52289a32cd5295fc597.bindPopup(popup_c7bcfa6098d46fbc034651b0d1c7e6e6)
         ;
 
         
     
     
-            var circle_410c0d48d8a6c6d0d6eefdcb65ae5e31 = L.circle(
+            var circle_bdd4ffbd31f01a6a7eda97c704dbd050 = L.circle(
                 [45.11805555555556, 78.46111111111111],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_5e4705ab7ee1d8dc6f276266d5ff92d5 = L.popup({
+        var popup_acdcb91cea0e94929ea25c8fdb2acf8e = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_48c9c4174ef2162f6aed2316c01041d6 = $(`<div id="html_48c9c4174ef2162f6aed2316c01041d6" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1850 м<br><b>Абсолютная высота:</b> 8100FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_5e4705ab7ee1d8dc6f276266d5ff92d5.setContent(html_48c9c4174ef2162f6aed2316c01041d6);
+                var html_f9c40d4b9a196f458065cbcff9e262e5 = $(`<div id="html_f9c40d4b9a196f458065cbcff9e262e5" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1850 м<br><b>Абсолютная высота:</b> 8100FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_acdcb91cea0e94929ea25c8fdb2acf8e.setContent(html_f9c40d4b9a196f458065cbcff9e262e5);
             
         
 
-        circle_410c0d48d8a6c6d0d6eefdcb65ae5e31.bindPopup(popup_5e4705ab7ee1d8dc6f276266d5ff92d5)
+        circle_bdd4ffbd31f01a6a7eda97c704dbd050.bindPopup(popup_acdcb91cea0e94929ea25c8fdb2acf8e)
         ;
 
         
     
     
-            var circle_8e86f9d62a147b84704df12c09718072 = L.circle(
+            var circle_0a92718dffe673fbb3990f528cb325f8 = L.circle(
                 [45.382777777777775, 78.10222222222221],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_e7f91c6634163f638c03218b0ca1807d = L.popup({
+        var popup_1d016e65700dca60181e5e24c30bf39b = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_a8ab073a566e6dd85344c1fdcd09282a = $(`<div id="html_a8ab073a566e6dd85344c1fdcd09282a" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-4000 м<br><b>Абсолютная высота:</b> 150FL<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_e7f91c6634163f638c03218b0ca1807d.setContent(html_a8ab073a566e6dd85344c1fdcd09282a);
+                var html_d259085eda802cf832fdba2ffb33f7ac = $(`<div id="html_d259085eda802cf832fdba2ffb33f7ac" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-4000 м<br><b>Абсолютная высота:</b> 150FL<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_1d016e65700dca60181e5e24c30bf39b.setContent(html_d259085eda802cf832fdba2ffb33f7ac);
             
         
 
-        circle_8e86f9d62a147b84704df12c09718072.bindPopup(popup_e7f91c6634163f638c03218b0ca1807d)
+        circle_0a92718dffe673fbb3990f528cb325f8.bindPopup(popup_1d016e65700dca60181e5e24c30bf39b)
         ;
 
         
     
     
-            var circle_be0984a1df6c9f1763426b55d7a1fcab = L.circle(
+            var circle_568f7dfc57c50661db284db74172acf1 = L.circle(
                 [43.757777777777775, 77.11861111111111],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_6fab7fc6ba915de68c6e4f1cd1f0195f = L.popup({
+        var popup_cc227d853d027b0654dbd6e13c73ebbc = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_4920522f9cf50129deff619ab824b124 = $(`<div id="html_4920522f9cf50129deff619ab824b124" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8300FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_6fab7fc6ba915de68c6e4f1cd1f0195f.setContent(html_4920522f9cf50129deff619ab824b124);
+                var html_6912c671b3963b9e0e957bc86ca16200 = $(`<div id="html_6912c671b3963b9e0e957bc86ca16200" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8300FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_cc227d853d027b0654dbd6e13c73ebbc.setContent(html_6912c671b3963b9e0e957bc86ca16200);
             
         
 
-        circle_be0984a1df6c9f1763426b55d7a1fcab.bindPopup(popup_6fab7fc6ba915de68c6e4f1cd1f0195f)
+        circle_568f7dfc57c50661db284db74172acf1.bindPopup(popup_cc227d853d027b0654dbd6e13c73ebbc)
         ;
 
         
     
     
-            var circle_c8511c79576f7065c2f576e3c6fcfd2c = L.circle(
+            var circle_bfea89f1c54e981ef37e51795904c4d8 = L.circle(
                 [45.10611111111111, 78.48611111111111],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_f6331a675b87a28e0e8a1ce1f7ca0937 = L.popup({
+        var popup_4bbedc671ca06b301cceac3b5eb07bc6 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_31eb026e1caa2768dc09e5d341093d46 = $(`<div id="html_31eb026e1caa2768dc09e5d341093d46" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1850 м<br><b>Абсолютная высота:</b> 8500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_f6331a675b87a28e0e8a1ce1f7ca0937.setContent(html_31eb026e1caa2768dc09e5d341093d46);
+                var html_5cec831d979688afda3bd5c2488472a6 = $(`<div id="html_5cec831d979688afda3bd5c2488472a6" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1850 м<br><b>Абсолютная высота:</b> 8500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_4bbedc671ca06b301cceac3b5eb07bc6.setContent(html_5cec831d979688afda3bd5c2488472a6);
             
         
 
-        circle_c8511c79576f7065c2f576e3c6fcfd2c.bindPopup(popup_f6331a675b87a28e0e8a1ce1f7ca0937)
+        circle_bfea89f1c54e981ef37e51795904c4d8.bindPopup(popup_4bbedc671ca06b301cceac3b5eb07bc6)
         ;
 
         
     
     
-            var circle_bbbc0b95771e6c3cc809b023002ab285 = L.circle(
+            var circle_8f262d06f8420e6a906dd90b4a9cc0cd = L.circle(
                 [46.95, 76.05],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_691fb4bc51708314a61172195b2d733a = L.popup({
+        var popup_9d8937713031a156bc779a1ac0552b09 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_2030937fe15728b4f5f3ef52b021dc8b = $(`<div id="html_2030937fe15728b4f5f3ef52b021dc8b" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1200 м<br><b>Абсолютная высота:</b> 5700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_691fb4bc51708314a61172195b2d733a.setContent(html_2030937fe15728b4f5f3ef52b021dc8b);
+                var html_c00d66c91af92a2b993e6097bc0e9fb6 = $(`<div id="html_c00d66c91af92a2b993e6097bc0e9fb6" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1200 м<br><b>Абсолютная высота:</b> 5700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_9d8937713031a156bc779a1ac0552b09.setContent(html_c00d66c91af92a2b993e6097bc0e9fb6);
             
         
 
-        circle_bbbc0b95771e6c3cc809b023002ab285.bindPopup(popup_691fb4bc51708314a61172195b2d733a)
+        circle_8f262d06f8420e6a906dd90b4a9cc0cd.bindPopup(popup_9d8937713031a156bc779a1ac0552b09)
         ;
 
         
     
     
-            var circle_09eacaff677e04305d882b3bbc689435 = L.circle(
+            var circle_ad4ea01f89d380425c578dfe3e38870f = L.circle(
                 [49.891666666666666, 79.83055555555555],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_fd7e99ab035088e05e6ac01f8c1dd92c = L.popup({
+        var popup_7779b1a1925df3f50e08860a42cdde8e = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_3987ed592756a29f3cfcd2850f5e1922 = $(`<div id="html_3987ed592756a29f3cfcd2850f5e1922" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_fd7e99ab035088e05e6ac01f8c1dd92c.setContent(html_3987ed592756a29f3cfcd2850f5e1922);
+                var html_42b7138c87c994441a2c4549f14ad559 = $(`<div id="html_42b7138c87c994441a2c4549f14ad559" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_7779b1a1925df3f50e08860a42cdde8e.setContent(html_42b7138c87c994441a2c4549f14ad559);
             
         
 
-        circle_09eacaff677e04305d882b3bbc689435.bindPopup(popup_fd7e99ab035088e05e6ac01f8c1dd92c)
+        circle_ad4ea01f89d380425c578dfe3e38870f.bindPopup(popup_7779b1a1925df3f50e08860a42cdde8e)
         ;
 
         
     
     
-            var circle_6d512cb7bbaed024bbfca6b6b35f7bba = L.circle(
+            var circle_5c8432518f12a41389d8f4b15fa64071 = L.circle(
                 [47.916666666666664, 80.18333333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_0651b5974a0d904f5b0bb1df07ca6e51 = L.popup({
+        var popup_e1bbb544c293663c8665abb4a8d1618f = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_0e06e0b4be78d03d51e3c15a45dd7963 = $(`<div id="html_0e06e0b4be78d03d51e3c15a45dd7963" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1500 м<br><b>Абсолютная высота:</b> 7600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_0651b5974a0d904f5b0bb1df07ca6e51.setContent(html_0e06e0b4be78d03d51e3c15a45dd7963);
+                var html_93d40c8941b9d4e2d7ed85db99d6f329 = $(`<div id="html_93d40c8941b9d4e2d7ed85db99d6f329" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1500 м<br><b>Абсолютная высота:</b> 7600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_e1bbb544c293663c8665abb4a8d1618f.setContent(html_93d40c8941b9d4e2d7ed85db99d6f329);
             
         
 
-        circle_6d512cb7bbaed024bbfca6b6b35f7bba.bindPopup(popup_0651b5974a0d904f5b0bb1df07ca6e51)
+        circle_5c8432518f12a41389d8f4b15fa64071.bindPopup(popup_e1bbb544c293663c8665abb4a8d1618f)
         ;
 
         
     
     
-            var circle_f0fe3f3103e2ae178264350a79a2fb5d = L.circle(
+            var circle_b4ee75d556ecdd77aea700411017f042 = L.circle(
                 [50.32916666666667, 82.59666666666666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_7a09cfdda983ed7bb2aaff2c445f666b = L.popup({
+        var popup_e1d0832d4dafdb12dbe16d5f49d89d60 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_7ee3896e146eb4a5038d2190901492eb = $(`<div id="html_7ee3896e146eb4a5038d2190901492eb" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 4600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_7a09cfdda983ed7bb2aaff2c445f666b.setContent(html_7ee3896e146eb4a5038d2190901492eb);
+                var html_fa9000927aca366218630da5f2543271 = $(`<div id="html_fa9000927aca366218630da5f2543271" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 4600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_e1d0832d4dafdb12dbe16d5f49d89d60.setContent(html_fa9000927aca366218630da5f2543271);
             
         
 
-        circle_f0fe3f3103e2ae178264350a79a2fb5d.bindPopup(popup_7a09cfdda983ed7bb2aaff2c445f666b)
+        circle_b4ee75d556ecdd77aea700411017f042.bindPopup(popup_e1d0832d4dafdb12dbe16d5f49d89d60)
         ;
 
         
     
     
-            var circle_f130ec02e5dd17a6452d0980c5e95307 = L.circle(
+            var circle_1cc64642a27f109098552bdfb4e6bc37 = L.circle(
                 [49.780833333333334, 80.89111111111112],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3700, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_79099335bfdef6a9be75871998a0ba7b = L.popup({
+        var popup_c93fca3e804098112b9e262caedbd902 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_e3bf46251245471b88c07e32ffbb6464 = $(`<div id="html_e3bf46251245471b88c07e32ffbb6464" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1400 м<br><b>Абсолютная высота:</b> 4200 FT<br><b>Время работы:</b> Вводится  в действие  по НОТАМ</div>`)[0];
-                popup_79099335bfdef6a9be75871998a0ba7b.setContent(html_e3bf46251245471b88c07e32ffbb6464);
+                var html_fe680dd5fca3e67c7251af2731f522e7 = $(`<div id="html_fe680dd5fca3e67c7251af2731f522e7" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1400 м<br><b>Абсолютная высота:</b> 4200 FT<br><b>Время работы:</b> Вводится  в действие  по НОТАМ</div>`)[0];
+                popup_c93fca3e804098112b9e262caedbd902.setContent(html_fe680dd5fca3e67c7251af2731f522e7);
             
         
 
-        circle_f130ec02e5dd17a6452d0980c5e95307.bindPopup(popup_79099335bfdef6a9be75871998a0ba7b)
+        circle_1cc64642a27f109098552bdfb4e6bc37.bindPopup(popup_c93fca3e804098112b9e262caedbd902)
         ;
 
         
     
     
-            var circle_1c942289552977af6b647a38420d46a7 = L.circle(
+            var circle_56650be6a4f32c904fb7a61d2e338419 = L.circle(
                 [50.25833333333333, 57.608333333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_33909b90f0d301752dd499318fd2f3c7 = L.popup({
+        var popup_153b768265591e4e1b2bbb0c530580b4 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_66b427389961ce777754f3ebc5d401ce = $(`<div id="html_66b427389961ce777754f3ebc5d401ce" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_33909b90f0d301752dd499318fd2f3c7.setContent(html_66b427389961ce777754f3ebc5d401ce);
+                var html_f0ec6103bcecbcff0bc214e88f496296 = $(`<div id="html_f0ec6103bcecbcff0bc214e88f496296" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_153b768265591e4e1b2bbb0c530580b4.setContent(html_f0ec6103bcecbcff0bc214e88f496296);
             
         
 
-        circle_1c942289552977af6b647a38420d46a7.bindPopup(popup_33909b90f0d301752dd499318fd2f3c7)
+        circle_56650be6a4f32c904fb7a61d2e338419.bindPopup(popup_153b768265591e4e1b2bbb0c530580b4)
         ;
 
         
     
     
-            var circle_076ed50ae0fb6a1f07402337b1dff9f0 = L.circle(
+            var circle_80a278eb0c0775b5881c27a8ea6a1f1f = L.circle(
                 [48.27611111111111, 70.22972222222222],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_c76082945bcfdeaaab188ff4c202a9e9 = L.popup({
+        var popup_9c6c935dbfd4e04331bdd2f8d07748a1 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_052bdb2b7723b5e813d25807545e322f = $(`<div id="html_052bdb2b7723b5e813d25807545e322f" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3000FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
-                popup_c76082945bcfdeaaab188ff4c202a9e9.setContent(html_052bdb2b7723b5e813d25807545e322f);
+                var html_34ed49cc1650fe023ad33052544fdd38 = $(`<div id="html_34ed49cc1650fe023ad33052544fdd38" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3000FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
+                popup_9c6c935dbfd4e04331bdd2f8d07748a1.setContent(html_34ed49cc1650fe023ad33052544fdd38);
             
         
 
-        circle_076ed50ae0fb6a1f07402337b1dff9f0.bindPopup(popup_c76082945bcfdeaaab188ff4c202a9e9)
+        circle_80a278eb0c0775b5881c27a8ea6a1f1f.bindPopup(popup_9c6c935dbfd4e04331bdd2f8d07748a1)
         ;
 
         
     
     
-            var circle_b9c2e1b8653117323aa621474db589dc = L.circle(
+            var circle_07b5249426615e357f4a2792edd75e62 = L.circle(
                 [50.67666666666666, 57.79805555555556],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_b676156fbaadc8c5c7e7ac36bf0c890a = L.popup({
+        var popup_cf81454bd1b608b2d1eaa4181e585462 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_5832df70fdb6a042956d47589cbdfb5d = $(`<div id="html_5832df70fdb6a042956d47589cbdfb5d" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4800FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_b676156fbaadc8c5c7e7ac36bf0c890a.setContent(html_5832df70fdb6a042956d47589cbdfb5d);
+                var html_10fe63249eb8cc4cd021dc6af0909e40 = $(`<div id="html_10fe63249eb8cc4cd021dc6af0909e40" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4800FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_cf81454bd1b608b2d1eaa4181e585462.setContent(html_10fe63249eb8cc4cd021dc6af0909e40);
             
         
 
-        circle_b9c2e1b8653117323aa621474db589dc.bindPopup(popup_b676156fbaadc8c5c7e7ac36bf0c890a)
+        circle_07b5249426615e357f4a2792edd75e62.bindPopup(popup_cf81454bd1b608b2d1eaa4181e585462)
         ;
 
         
     
     
-            var circle_2302689efab36e75c58d39713b2df9c9 = L.circle(
+            var circle_7f2c2eb31ba856cd2b357e225a1db8a1 = L.circle(
                 [53.43833333333333, 69.41888888888889],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_0c36386c932e0506a8ae3278e62160ed = L.popup({
+        var popup_925adce1466079eecbe87f138c8df61a = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_acd797d448f3cadf98c4936928db0939 = $(`<div id="html_acd797d448f3cadf98c4936928db0939" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4100FT<br><b>Время работы:</b> Ежедневно, светлое время суток</div>`)[0];
-                popup_0c36386c932e0506a8ae3278e62160ed.setContent(html_acd797d448f3cadf98c4936928db0939);
+                var html_31ae010a4ca81eda887d1010a27f511a = $(`<div id="html_31ae010a4ca81eda887d1010a27f511a" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4100FT<br><b>Время работы:</b> Ежедневно, светлое время суток</div>`)[0];
+                popup_925adce1466079eecbe87f138c8df61a.setContent(html_31ae010a4ca81eda887d1010a27f511a);
             
         
 
-        circle_2302689efab36e75c58d39713b2df9c9.bindPopup(popup_0c36386c932e0506a8ae3278e62160ed)
+        circle_7f2c2eb31ba856cd2b357e225a1db8a1.bindPopup(popup_925adce1466079eecbe87f138c8df61a)
         ;
 
         
     
     
-            var circle_ddfdd5d72f4e418c60dc77b0c2b57904 = L.circle(
+            var circle_4bd7dcf84d83b7857aecc5c25e50f6aa = L.circle(
                 [50.54611111111111, 58.43666666666666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_fa7615cad3ff453f3c8db454495fa6a9 = L.popup({
+        var popup_9be34945d395d52ea3c3a636d39b9284 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_1d6f40b2523dded2b70748ca30b4139e = $(`<div id="html_1d6f40b2523dded2b70748ca30b4139e" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_fa7615cad3ff453f3c8db454495fa6a9.setContent(html_1d6f40b2523dded2b70748ca30b4139e);
+                var html_3837f65b736dfe1ada7f0d40128df161 = $(`<div id="html_3837f65b736dfe1ada7f0d40128df161" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_9be34945d395d52ea3c3a636d39b9284.setContent(html_3837f65b736dfe1ada7f0d40128df161);
             
         
 
-        circle_ddfdd5d72f4e418c60dc77b0c2b57904.bindPopup(popup_fa7615cad3ff453f3c8db454495fa6a9)
+        circle_4bd7dcf84d83b7857aecc5c25e50f6aa.bindPopup(popup_9be34945d395d52ea3c3a636d39b9284)
         ;
 
         
     
     
-            var circle_7a3f5263b918edb757f28aa47f24bcfc = L.circle(
+            var circle_e71e2000617419fdbe49b036261df642 = L.circle(
                 [48.61833333333333, 58.5125],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_57a280a12697524d294807737e2710b6 = L.popup({
+        var popup_e8fb035584d75672ab091c6ba4cf64ca = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_451750143d366584f607435089bce6b9 = $(`<div id="html_451750143d366584f607435089bce6b9" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 5100FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_57a280a12697524d294807737e2710b6.setContent(html_451750143d366584f607435089bce6b9);
+                var html_279282399da62713c872e7d0c269a327 = $(`<div id="html_279282399da62713c872e7d0c269a327" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 5100FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_e8fb035584d75672ab091c6ba4cf64ca.setContent(html_279282399da62713c872e7d0c269a327);
             
         
 
-        circle_7a3f5263b918edb757f28aa47f24bcfc.bindPopup(popup_57a280a12697524d294807737e2710b6)
+        circle_e71e2000617419fdbe49b036261df642.bindPopup(popup_e8fb035584d75672ab091c6ba4cf64ca)
         ;
 
         
     
     
-            var circle_80ae35001e318955010d26077eb178e8 = L.circle(
+            var circle_821acaecccf8a7ad0eeac5914a236377 = L.circle(
                 [48.52111111111111, 58.52916666666667],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_744bf345f64e3c046e001bb1c98b8c5a = L.popup({
+        var popup_19d6cd578d4eb26c350e0c6c92726f55 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_32f72c3d02110ee3d0400ce9016de14a = $(`<div id="html_32f72c3d02110ee3d0400ce9016de14a" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 5200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_744bf345f64e3c046e001bb1c98b8c5a.setContent(html_32f72c3d02110ee3d0400ce9016de14a);
+                var html_f609742794e8b5a2eb0ef842cabb4a90 = $(`<div id="html_f609742794e8b5a2eb0ef842cabb4a90" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 5200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_19d6cd578d4eb26c350e0c6c92726f55.setContent(html_f609742794e8b5a2eb0ef842cabb4a90);
             
         
 
-        circle_80ae35001e318955010d26077eb178e8.bindPopup(popup_744bf345f64e3c046e001bb1c98b8c5a)
+        circle_821acaecccf8a7ad0eeac5914a236377.bindPopup(popup_19d6cd578d4eb26c350e0c6c92726f55)
         ;
 
         
     
     
-            var circle_9f81c32484ed2ba132a36740a13326af = L.circle(
+            var circle_62912a1caa43a774f18e58f9cd6e4e08 = L.circle(
                 [48.475, 58.513888888888886],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_d6dc1e9417d52f4d3d5f5acf2b94cfb4 = L.popup({
+        var popup_fd7eb6370705a1c6db8e0a78b69db87a = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_2a0c766a1534318440ece2ee8b28824c = $(`<div id="html_2a0c766a1534318440ece2ee8b28824c" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 5500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_d6dc1e9417d52f4d3d5f5acf2b94cfb4.setContent(html_2a0c766a1534318440ece2ee8b28824c);
+                var html_1e93292d83427ce5805e14329e82afd6 = $(`<div id="html_1e93292d83427ce5805e14329e82afd6" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 5500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_fd7eb6370705a1c6db8e0a78b69db87a.setContent(html_1e93292d83427ce5805e14329e82afd6);
             
         
 
-        circle_9f81c32484ed2ba132a36740a13326af.bindPopup(popup_d6dc1e9417d52f4d3d5f5acf2b94cfb4)
+        circle_62912a1caa43a774f18e58f9cd6e4e08.bindPopup(popup_fd7eb6370705a1c6db8e0a78b69db87a)
         ;
 
         
     
     
-            var circle_ddaca6a719334e8d82f6ffbc9f1bf394 = L.circle(
+            var circle_7e299ed8ce88dbdaafaacc4bbcdd0c0e = L.circle(
                 [50.41861111111111, 58.786944444444444],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_902cb1164f00a1006271f56a58967f11 = L.popup({
+        var popup_664dc60a6a39de3379b29de514a06722 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_18d474adb888366ce4e0bb5524727b04 = $(`<div id="html_18d474adb888366ce4e0bb5524727b04" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_902cb1164f00a1006271f56a58967f11.setContent(html_18d474adb888366ce4e0bb5524727b04);
+                var html_9d5aab3f5b5f737b8b9fd19350bd2c65 = $(`<div id="html_9d5aab3f5b5f737b8b9fd19350bd2c65" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_664dc60a6a39de3379b29de514a06722.setContent(html_9d5aab3f5b5f737b8b9fd19350bd2c65);
             
         
 
-        circle_ddaca6a719334e8d82f6ffbc9f1bf394.bindPopup(popup_902cb1164f00a1006271f56a58967f11)
+        circle_7e299ed8ce88dbdaafaacc4bbcdd0c0e.bindPopup(popup_664dc60a6a39de3379b29de514a06722)
         ;
 
         
     
     
-            var circle_23ba2221b96cc9db288b916ea8f3845f = L.circle(
+            var circle_481f00d3ee0c98fd179587bfd7da1075 = L.circle(
                 [50.45, 60.38333333333333],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_fc36d0f9b0e42c1878c13ae4d431581d = L.popup({
+        var popup_16ad55a27bebddbe005684c08541b8e5 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_a5eec3392bf8878842c1c022df702fe8 = $(`<div id="html_a5eec3392bf8878842c1c022df702fe8" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_fc36d0f9b0e42c1878c13ae4d431581d.setContent(html_a5eec3392bf8878842c1c022df702fe8);
+                var html_e964def5c1977234f056a950f0fef298 = $(`<div id="html_e964def5c1977234f056a950f0fef298" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_16ad55a27bebddbe005684c08541b8e5.setContent(html_e964def5c1977234f056a950f0fef298);
             
         
 
-        circle_23ba2221b96cc9db288b916ea8f3845f.bindPopup(popup_fc36d0f9b0e42c1878c13ae4d431581d)
+        circle_481f00d3ee0c98fd179587bfd7da1075.bindPopup(popup_16ad55a27bebddbe005684c08541b8e5)
         ;
 
         
     
     
-            var circle_2a054351470a2e277fa387e3a4c19a09 = L.circle(
+            var circle_e85e3015f78f01675685f090b3712e21 = L.circle(
                 [50.96666666666667, 58.416666666666664],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_ef96c50d42e03756bc2a7654936b25aa = L.popup({
+        var popup_264f1ebaf88429d02be5db7064df7711 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_0bfd12e7c1b6ecc79196c4daa5c2f84f = $(`<div id="html_0bfd12e7c1b6ecc79196c4daa5c2f84f" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_ef96c50d42e03756bc2a7654936b25aa.setContent(html_0bfd12e7c1b6ecc79196c4daa5c2f84f);
+                var html_f83b292d60a63b8d10e6640a38e4a5a7 = $(`<div id="html_f83b292d60a63b8d10e6640a38e4a5a7" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_264f1ebaf88429d02be5db7064df7711.setContent(html_f83b292d60a63b8d10e6640a38e4a5a7);
             
         
 
-        circle_2a054351470a2e277fa387e3a4c19a09.bindPopup(popup_ef96c50d42e03756bc2a7654936b25aa)
+        circle_e85e3015f78f01675685f090b3712e21.bindPopup(popup_264f1ebaf88429d02be5db7064df7711)
         ;
 
         
     
     
-            var circle_cb7ddd34b91c9cf97dff4fe9fc19daca = L.circle(
+            var circle_856e9f5ba538922d25f8e9cb83f27b8a = L.circle(
                 [50.51111111111111, 55.083333333333336],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_13af20dff7fd3736bd883446789677df = L.popup({
+        var popup_be80710a9b191dcbec0aad1891a94afd = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_65081856d970a8a827058176bbd04203 = $(`<div id="html_65081856d970a8a827058176bbd04203" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7300FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_13af20dff7fd3736bd883446789677df.setContent(html_65081856d970a8a827058176bbd04203);
+                var html_f5f8b8abab12680652d9948c7a19d1d8 = $(`<div id="html_f5f8b8abab12680652d9948c7a19d1d8" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7300FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_be80710a9b191dcbec0aad1891a94afd.setContent(html_f5f8b8abab12680652d9948c7a19d1d8);
             
         
 
-        circle_cb7ddd34b91c9cf97dff4fe9fc19daca.bindPopup(popup_13af20dff7fd3736bd883446789677df)
+        circle_856e9f5ba538922d25f8e9cb83f27b8a.bindPopup(popup_be80710a9b191dcbec0aad1891a94afd)
         ;
 
         
     
     
-            var circle_924039710e3429da75bb67f6793db60c = L.circle(
+            var circle_b5830259946b31f47ee4ee1934fb61f6 = L.circle(
                 [50.950833333333335, 56.46666666666667],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_278b091f54845ebd030ad663c157ca79 = L.popup({
+        var popup_8e59a4e0d2e647202a0ef0933263de81 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_b58996e6ca72e7c4c07a60f4eecb8c46 = $(`<div id="html_b58996e6ca72e7c4c07a60f4eecb8c46" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_278b091f54845ebd030ad663c157ca79.setContent(html_b58996e6ca72e7c4c07a60f4eecb8c46);
+                var html_d76acd48394e6fbb9431f0f99a93dee8 = $(`<div id="html_d76acd48394e6fbb9431f0f99a93dee8" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_8e59a4e0d2e647202a0ef0933263de81.setContent(html_d76acd48394e6fbb9431f0f99a93dee8);
             
         
 
-        circle_924039710e3429da75bb67f6793db60c.bindPopup(popup_278b091f54845ebd030ad663c157ca79)
+        circle_b5830259946b31f47ee4ee1934fb61f6.bindPopup(popup_8e59a4e0d2e647202a0ef0933263de81)
         ;
 
         
     
     
-            var circle_fce00841d8ab0bc874c76a1b38dd6f43 = L.circle(
+            var circle_b7a54ca65632fdf1c1ca6076fc82d94d = L.circle(
                 [42.916666666666664, 71.2],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_bbe93b14b51a7883b1a156c871dcb146 = L.popup({
+        var popup_ee0f6d8dd923cdd38e9fd2c66b04d51a = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_79f105a5f6202a62853728292d4e1873 = $(`<div id="html_79f105a5f6202a62853728292d4e1873" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_bbe93b14b51a7883b1a156c871dcb146.setContent(html_79f105a5f6202a62853728292d4e1873);
+                var html_d3a886b89e1d6ac19bfdf799ce327d7e = $(`<div id="html_d3a886b89e1d6ac19bfdf799ce327d7e" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_ee0f6d8dd923cdd38e9fd2c66b04d51a.setContent(html_d3a886b89e1d6ac19bfdf799ce327d7e);
             
         
 
-        circle_fce00841d8ab0bc874c76a1b38dd6f43.bindPopup(popup_bbe93b14b51a7883b1a156c871dcb146)
+        circle_b7a54ca65632fdf1c1ca6076fc82d94d.bindPopup(popup_ee0f6d8dd923cdd38e9fd2c66b04d51a)
         ;
 
         
     
     
-            var circle_3bb584f49da111b6ea95f76380c6c400 = L.circle(
+            var circle_138db71a3127d2febf0c3ea18d28d474 = L.circle(
                 [43.2175, 71.64444444444445],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_49c39b4d4392d5929a895b7b7995da4a = L.popup({
+        var popup_020931c4d9a1763228dacb52dbb5f88f = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_bc87ca57040f928f19db1c82279c34ae = $(`<div id="html_bc87ca57040f928f19db1c82279c34ae" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_49c39b4d4392d5929a895b7b7995da4a.setContent(html_bc87ca57040f928f19db1c82279c34ae);
+                var html_3b3d310718987694f93c390d2057c6b7 = $(`<div id="html_3b3d310718987694f93c390d2057c6b7" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_020931c4d9a1763228dacb52dbb5f88f.setContent(html_3b3d310718987694f93c390d2057c6b7);
             
         
 
-        circle_3bb584f49da111b6ea95f76380c6c400.bindPopup(popup_49c39b4d4392d5929a895b7b7995da4a)
+        circle_138db71a3127d2febf0c3ea18d28d474.bindPopup(popup_020931c4d9a1763228dacb52dbb5f88f)
         ;
 
         
     
     
-            var circle_5a415e77baab6caadd04c3b8148d92b2 = L.circle(
+            var circle_69da763d2f6645c31186d738722e4448 = L.circle(
                 [43.016666666666666, 74.86666666666666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_59bfffb36882454c6ce3478f884e95d9 = L.popup({
+        var popup_3bf9b91fd67c35bb4e8608296663e5eb = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_3ec58f1375530e296d3f2cd57d1b41e6 = $(`<div id="html_3ec58f1375530e296d3f2cd57d1b41e6" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 9300FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_59bfffb36882454c6ce3478f884e95d9.setContent(html_3ec58f1375530e296d3f2cd57d1b41e6);
+                var html_27201f563fa0c5e5ad3739dbe8034d41 = $(`<div id="html_27201f563fa0c5e5ad3739dbe8034d41" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 9300FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_3bf9b91fd67c35bb4e8608296663e5eb.setContent(html_27201f563fa0c5e5ad3739dbe8034d41);
             
         
 
-        circle_5a415e77baab6caadd04c3b8148d92b2.bindPopup(popup_59bfffb36882454c6ce3478f884e95d9)
+        circle_69da763d2f6645c31186d738722e4448.bindPopup(popup_3bf9b91fd67c35bb4e8608296663e5eb)
         ;
 
         
     
     
-            var circle_49c2bab6bdd98a1d932562edb4f082bb = L.circle(
+            var circle_5724fd674cbb0ca9a79eb8687c0b9e99 = L.circle(
                 [51.56916666666667, 72.02805555555555],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_229ec7c53b9e9f2d43eb5302fb1ae635 = L.popup({
+        var popup_dbdf1910cb6697279630bddb5abdbab3 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_d62569c5d45b4ff849dc74338cd16675 = $(`<div id="html_d62569c5d45b4ff849dc74338cd16675" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_229ec7c53b9e9f2d43eb5302fb1ae635.setContent(html_d62569c5d45b4ff849dc74338cd16675);
+                var html_2f90d70adb4f89551ecf522a5aff31cf = $(`<div id="html_2f90d70adb4f89551ecf522a5aff31cf" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 7900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_dbdf1910cb6697279630bddb5abdbab3.setContent(html_2f90d70adb4f89551ecf522a5aff31cf);
             
         
 
-        circle_49c2bab6bdd98a1d932562edb4f082bb.bindPopup(popup_229ec7c53b9e9f2d43eb5302fb1ae635)
+        circle_5724fd674cbb0ca9a79eb8687c0b9e99.bindPopup(popup_dbdf1910cb6697279630bddb5abdbab3)
         ;
 
         
     
     
-            var circle_0301b3653815c6105ac6be8ffa4ad14f = L.circle(
+            var circle_c007761d11db3736e1b86484333a61fb = L.circle(
                 [49.55972222222222, 72.83999999999999],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_ed311d3da3647e41ef537e715d7a91ee = L.popup({
+        var popup_775b04d99849bd1f86a450a317ceca66 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_1024a09e2690e812d67bef0439847140 = $(`<div id="html_1024a09e2690e812d67bef0439847140" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1200 м<br><b>Абсолютная высота:</b> 6200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_ed311d3da3647e41ef537e715d7a91ee.setContent(html_1024a09e2690e812d67bef0439847140);
+                var html_43fe9a467775c03596840dc7dcef3d06 = $(`<div id="html_43fe9a467775c03596840dc7dcef3d06" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1200 м<br><b>Абсолютная высота:</b> 6200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_775b04d99849bd1f86a450a317ceca66.setContent(html_43fe9a467775c03596840dc7dcef3d06);
             
         
 
-        circle_0301b3653815c6105ac6be8ffa4ad14f.bindPopup(popup_ed311d3da3647e41ef537e715d7a91ee)
+        circle_c007761d11db3736e1b86484333a61fb.bindPopup(popup_775b04d99849bd1f86a450a317ceca66)
         ;
 
         
     
     
-            var circle_83500f3cadc05d618e3c4879d42d5370 = L.circle(
+            var circle_4721cdb2d19fdadf161062c57f18bc30 = L.circle(
                 [47.86666666666667, 67.43333333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_e2a751ff7ad77b7106d4f40079472f3a = L.popup({
+        var popup_3b2de00ea9310ffc08b3540241984a1f = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_a6cd4c2e8ccd5669d083b3bcab32a258 = $(`<div id="html_a6cd4c2e8ccd5669d083b3bcab32a258" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
-                popup_e2a751ff7ad77b7106d4f40079472f3a.setContent(html_a6cd4c2e8ccd5669d083b3bcab32a258);
+                var html_46fde30e4b6c7a7db47128e82e72e5a9 = $(`<div id="html_46fde30e4b6c7a7db47128e82e72e5a9" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
+                popup_3b2de00ea9310ffc08b3540241984a1f.setContent(html_46fde30e4b6c7a7db47128e82e72e5a9);
             
         
 
-        circle_83500f3cadc05d618e3c4879d42d5370.bindPopup(popup_e2a751ff7ad77b7106d4f40079472f3a)
+        circle_4721cdb2d19fdadf161062c57f18bc30.bindPopup(popup_3b2de00ea9310ffc08b3540241984a1f)
         ;
 
         
     
     
-            var circle_65b8a394da3728bf9bb316951e087813 = L.circle(
+            var circle_888e21baa2b166dcde4bd804fdbfd270 = L.circle(
                 [47.8, 67.31666666666666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_a926a62c38b07636bf17fde4927566ef = L.popup({
+        var popup_e2419fd88c41f7c0fd0cfb344f27196c = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_425fb19efb0c21d9419b90e81f75f7d1 = $(`<div id="html_425fb19efb0c21d9419b90e81f75f7d1" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_a926a62c38b07636bf17fde4927566ef.setContent(html_425fb19efb0c21d9419b90e81f75f7d1);
+                var html_db10f77f29e61f2522260c1939713d3e = $(`<div id="html_db10f77f29e61f2522260c1939713d3e" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_e2419fd88c41f7c0fd0cfb344f27196c.setContent(html_db10f77f29e61f2522260c1939713d3e);
             
         
 
-        circle_65b8a394da3728bf9bb316951e087813.bindPopup(popup_a926a62c38b07636bf17fde4927566ef)
+        circle_888e21baa2b166dcde4bd804fdbfd270.bindPopup(popup_e2419fd88c41f7c0fd0cfb344f27196c)
         ;
 
         
     
     
-            var circle_a911583050a9ea100ad6802256a87623 = L.circle(
+            var circle_6cf865d61a8f90152c0e79554a2bd937 = L.circle(
                 [47.86666666666667, 67.38333333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_4a91ff61fada5805c0bd8342b95a7ae2 = L.popup({
+        var popup_019ddc3cd966a25436f4ab11099ae050 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_baa6e2e9e02540faac4aa20f3de48fd0 = $(`<div id="html_baa6e2e9e02540faac4aa20f3de48fd0" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
-                popup_4a91ff61fada5805c0bd8342b95a7ae2.setContent(html_baa6e2e9e02540faac4aa20f3de48fd0);
+                var html_cd668371e8da058a936039f849fcdce0 = $(`<div id="html_cd668371e8da058a936039f849fcdce0" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
+                popup_019ddc3cd966a25436f4ab11099ae050.setContent(html_cd668371e8da058a936039f849fcdce0);
             
         
 
-        circle_a911583050a9ea100ad6802256a87623.bindPopup(popup_4a91ff61fada5805c0bd8342b95a7ae2)
+        circle_6cf865d61a8f90152c0e79554a2bd937.bindPopup(popup_019ddc3cd966a25436f4ab11099ae050)
         ;
 
         
     
     
-            var circle_ec81d2c2cbc8a9acfc870760f38d3ac6 = L.circle(
+            var circle_33c0ab922b5466336c90afafb4f56ce9 = L.circle(
                 [48.11666666666667, 67.38333333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_44232c3bd85510d866cebcd019a18780 = L.popup({
+        var popup_e2170241c08a5bdea847fe598cffc5c1 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_6af5755d66e282fc9fabeeb73cd69d04 = $(`<div id="html_6af5755d66e282fc9fabeeb73cd69d04" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_44232c3bd85510d866cebcd019a18780.setContent(html_6af5755d66e282fc9fabeeb73cd69d04);
+                var html_acdfe1b948527fe38be7da8ec07a5850 = $(`<div id="html_acdfe1b948527fe38be7da8ec07a5850" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_e2170241c08a5bdea847fe598cffc5c1.setContent(html_acdfe1b948527fe38be7da8ec07a5850);
             
         
 
-        circle_ec81d2c2cbc8a9acfc870760f38d3ac6.bindPopup(popup_44232c3bd85510d866cebcd019a18780)
+        circle_33c0ab922b5466336c90afafb4f56ce9.bindPopup(popup_e2170241c08a5bdea847fe598cffc5c1)
         ;
 
         
     
     
-            var circle_f64d0eb6b2032dc161727f1785ea32a5 = L.circle(
+            var circle_37e14b7c84109d3f537f6f84a3585f74 = L.circle(
                 [47.833333333333336, 67.46666666666667],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_c73d5850cf9211b05e22f8700822fbcf = L.popup({
+        var popup_e770ed90afd1ccb101971832fab62904 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_fb1f5ea0ebd3c010d760475921848b2b = $(`<div id="html_fb1f5ea0ebd3c010d760475921848b2b" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_c73d5850cf9211b05e22f8700822fbcf.setContent(html_fb1f5ea0ebd3c010d760475921848b2b);
+                var html_dcdcea476b0e797cf4f1b4086c70f622 = $(`<div id="html_dcdcea476b0e797cf4f1b4086c70f622" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_e770ed90afd1ccb101971832fab62904.setContent(html_dcdcea476b0e797cf4f1b4086c70f622);
             
         
 
-        circle_f64d0eb6b2032dc161727f1785ea32a5.bindPopup(popup_c73d5850cf9211b05e22f8700822fbcf)
+        circle_37e14b7c84109d3f537f6f84a3585f74.bindPopup(popup_e770ed90afd1ccb101971832fab62904)
         ;
 
         
     
     
-            var circle_511e66de0d5bdc253acd1c8256a2383f = L.circle(
+            var circle_a2ce301abeff3513d41ce5fb171e3945 = L.circle(
                 [48.13333333333333, 67.58333333333333],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_326fa9471fdf793052728baef72be936 = L.popup({
+        var popup_02c4adbd4181f931bef9912e6716b85e = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_4084418d9b2253c09fc3877148ab53cf = $(`<div id="html_4084418d9b2253c09fc3877148ab53cf" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_326fa9471fdf793052728baef72be936.setContent(html_4084418d9b2253c09fc3877148ab53cf);
+                var html_c72aa798c49cc4f4d6878c418255c547 = $(`<div id="html_c72aa798c49cc4f4d6878c418255c547" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2600FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_02c4adbd4181f931bef9912e6716b85e.setContent(html_c72aa798c49cc4f4d6878c418255c547);
             
         
 
-        circle_511e66de0d5bdc253acd1c8256a2383f.bindPopup(popup_326fa9471fdf793052728baef72be936)
+        circle_a2ce301abeff3513d41ce5fb171e3945.bindPopup(popup_02c4adbd4181f931bef9912e6716b85e)
         ;
 
         
     
     
-            var circle_2f804a87e7704c2e750d00f71effd17c = L.circle(
+            var circle_7ab5b9e2aed129bbc6bf322f4670c8b9 = L.circle(
                 [47.9, 66.43333333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_c1de0bfb2d343ccaa51537ff95c9ca28 = L.popup({
+        var popup_99ee0c22983a070f8b10565434290e8a = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_ee4d4678912561f5e71fd15c7be8a34b = $(`<div id="html_ee4d4678912561f5e71fd15c7be8a34b" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_c1de0bfb2d343ccaa51537ff95c9ca28.setContent(html_ee4d4678912561f5e71fd15c7be8a34b);
+                var html_544172a60337f8cd1c097cf4e61776c2 = $(`<div id="html_544172a60337f8cd1c097cf4e61776c2" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-350 м<br><b>Абсолютная высота:</b> 2900FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_99ee0c22983a070f8b10565434290e8a.setContent(html_544172a60337f8cd1c097cf4e61776c2);
             
         
 
-        circle_2f804a87e7704c2e750d00f71effd17c.bindPopup(popup_c1de0bfb2d343ccaa51537ff95c9ca28)
+        circle_7ab5b9e2aed129bbc6bf322f4670c8b9.bindPopup(popup_99ee0c22983a070f8b10565434290e8a)
         ;
 
         
     
     
-            var circle_7f0efbca74bc75dd0e2ac8e014234382 = L.circle(
+            var circle_4b27f3f8caa1fb3e7870a2ad0c38e0dc = L.circle(
                 [52.60416666666667, 62.505833333333335],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_3ea973f3bb283fe5aec0e4b6cf471470 = L.popup({
+        var popup_6637423d3f4356b8b596db7244302641 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_321e6c7fe537ee11e061f77bd6186ae0 = $(`<div id="html_321e6c7fe537ee11e061f77bd6186ae0" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_3ea973f3bb283fe5aec0e4b6cf471470.setContent(html_321e6c7fe537ee11e061f77bd6186ae0);
+                var html_51d8659c6773cf0ffd3250c0166ce787 = $(`<div id="html_51d8659c6773cf0ffd3250c0166ce787" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_6637423d3f4356b8b596db7244302641.setContent(html_51d8659c6773cf0ffd3250c0166ce787);
             
         
 
-        circle_7f0efbca74bc75dd0e2ac8e014234382.bindPopup(popup_3ea973f3bb283fe5aec0e4b6cf471470)
+        circle_4b27f3f8caa1fb3e7870a2ad0c38e0dc.bindPopup(popup_6637423d3f4356b8b596db7244302641)
         ;
 
         
     
     
-            var circle_dc42c96da7b3fa5300917c62c2aff7e6 = L.circle(
+            var circle_ada179e24c14bd4138f09ff6805bef76 = L.circle(
                 [50.6, 71.0],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_aa1d3a9fe89db7023b6b00c4973f1f4e = L.popup({
+        var popup_38fb79e1571171daf646ac9b31824a04 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_b905519bb2d24cd7af863cd7bfc98a50 = $(`<div id="html_b905519bb2d24cd7af863cd7bfc98a50" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 900 м<br><b>Абсолютная высота:</b> 4500FT<br><b>Время работы:</b> Постоянно</div>`)[0];
-                popup_aa1d3a9fe89db7023b6b00c4973f1f4e.setContent(html_b905519bb2d24cd7af863cd7bfc98a50);
+                var html_646d815f8c19be8efd50163c2760bf88 = $(`<div id="html_646d815f8c19be8efd50163c2760bf88" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 900 м<br><b>Абсолютная высота:</b> 4500FT<br><b>Время работы:</b> Постоянно</div>`)[0];
+                popup_38fb79e1571171daf646ac9b31824a04.setContent(html_646d815f8c19be8efd50163c2760bf88);
             
         
 
-        circle_dc42c96da7b3fa5300917c62c2aff7e6.bindPopup(popup_aa1d3a9fe89db7023b6b00c4973f1f4e)
+        circle_ada179e24c14bd4138f09ff6805bef76.bindPopup(popup_38fb79e1571171daf646ac9b31824a04)
         ;
 
         
     
     
-            var circle_6da0a840e21a8f10c798d83b65587be3 = L.circle(
+            var circle_f314a31af9d82f0786dfb7f600bbc93b = L.circle(
                 [50.583333333333336, 71.83333333333333],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_9358cf5fe68c81f52b9d1b8ee3ab8995 = L.popup({
+        var popup_cbd0055d0c89c42e1c3ae51f90e243eb = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_182f7868db7a7d720fcabf10bdb7beb5 = $(`<div id="html_182f7868db7a7d720fcabf10bdb7beb5" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 1200 м<br><b>Абсолютная высота:</b> 5800FT<br><b>Время работы:</b> Ежедневно, с 02.00 до 15.00</div>`)[0];
-                popup_9358cf5fe68c81f52b9d1b8ee3ab8995.setContent(html_182f7868db7a7d720fcabf10bdb7beb5);
+                var html_363578e3bc9b25ed8da73ae56cfa665c = $(`<div id="html_363578e3bc9b25ed8da73ae56cfa665c" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 1200 м<br><b>Абсолютная высота:</b> 5800FT<br><b>Время работы:</b> Ежедневно, с 02.00 до 15.00</div>`)[0];
+                popup_cbd0055d0c89c42e1c3ae51f90e243eb.setContent(html_363578e3bc9b25ed8da73ae56cfa665c);
             
         
 
-        circle_6da0a840e21a8f10c798d83b65587be3.bindPopup(popup_9358cf5fe68c81f52b9d1b8ee3ab8995)
+        circle_f314a31af9d82f0786dfb7f600bbc93b.bindPopup(popup_cbd0055d0c89c42e1c3ae51f90e243eb)
         ;
 
         
     
     
-            var circle_abd3af425fd6d68992bbe676657b16b7 = L.circle(
+            var circle_8b2599e49de8ae05eb38b850a32f3182 = L.circle(
                 [51.85, 72.55],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_707bc68938c1ba0b91efc37f54fce6cd = L.popup({
+        var popup_ffab5d70e7c802f8e0f536ba1e8d0c7d = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_2261c8b3d909143b8cdde359f5fdbac1 = $(`<div id="html_2261c8b3d909143b8cdde359f5fdbac1" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Ежедневно, с 03.00 до 11.00</div>`)[0];
-                popup_707bc68938c1ba0b91efc37f54fce6cd.setContent(html_2261c8b3d909143b8cdde359f5fdbac1);
+                var html_c4a61c362a1896ffebfc822946fe6b54 = $(`<div id="html_c4a61c362a1896ffebfc822946fe6b54" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Ежедневно, с 03.00 до 11.00</div>`)[0];
+                popup_ffab5d70e7c802f8e0f536ba1e8d0c7d.setContent(html_c4a61c362a1896ffebfc822946fe6b54);
             
         
 
-        circle_abd3af425fd6d68992bbe676657b16b7.bindPopup(popup_707bc68938c1ba0b91efc37f54fce6cd)
+        circle_8b2599e49de8ae05eb38b850a32f3182.bindPopup(popup_ffab5d70e7c802f8e0f536ba1e8d0c7d)
         ;
 
         
     
     
-            var circle_cb20c7b9a5977d0cbaff009b845c7e08 = L.circle(
+            var circle_a9b1955e0e74199ac024bc70530bf9c7 = L.circle(
                 [53.4, 69.33333333333333],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_4d67b1a796eb25bcb7fcba63994480ab = L.popup({
+        var popup_6bf293c7e4978e13d55dcf96e5879585 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_41bd0b1997be2ff540a33496e02f0c10 = $(`<div id="html_41bd0b1997be2ff540a33496e02f0c10" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_4d67b1a796eb25bcb7fcba63994480ab.setContent(html_41bd0b1997be2ff540a33496e02f0c10);
+                var html_c9d0f17e3cd328a68819e1a565a4cfa2 = $(`<div id="html_c9d0f17e3cd328a68819e1a565a4cfa2" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2400FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_6bf293c7e4978e13d55dcf96e5879585.setContent(html_c9d0f17e3cd328a68819e1a565a4cfa2);
             
         
 
-        circle_cb20c7b9a5977d0cbaff009b845c7e08.bindPopup(popup_4d67b1a796eb25bcb7fcba63994480ab)
+        circle_a9b1955e0e74199ac024bc70530bf9c7.bindPopup(popup_6bf293c7e4978e13d55dcf96e5879585)
         ;
 
         
     
     
-            var circle_e388365b8b87b7e2533edfe18535bed3 = L.circle(
+            var circle_069b0cbe8004fe46e413f3af7915779e = L.circle(
                 [51.71666666666667, 72.2],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_a76ece08d5f3e3a18741bc281f772b7e = L.popup({
+        var popup_ff070b7a89ded50f60b6f9e0267a2d96 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_973cf4f357a9247e9ed5f0bf06e14104 = $(`<div id="html_973cf4f357a9247e9ed5f0bf06e14104" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2700FT<br><b>Время работы:</b> Ежедневно, с 03.00 до 11.00</div>`)[0];
-                popup_a76ece08d5f3e3a18741bc281f772b7e.setContent(html_973cf4f357a9247e9ed5f0bf06e14104);
+                var html_86ea96db2faacdcc8b74bc589f5b8edd = $(`<div id="html_86ea96db2faacdcc8b74bc589f5b8edd" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2700FT<br><b>Время работы:</b> Ежедневно, с 03.00 до 11.00</div>`)[0];
+                popup_ff070b7a89ded50f60b6f9e0267a2d96.setContent(html_86ea96db2faacdcc8b74bc589f5b8edd);
             
         
 
-        circle_e388365b8b87b7e2533edfe18535bed3.bindPopup(popup_a76ece08d5f3e3a18741bc281f772b7e)
+        circle_069b0cbe8004fe46e413f3af7915779e.bindPopup(popup_ff070b7a89ded50f60b6f9e0267a2d96)
         ;
 
         
     
     
-            var circle_f7345f58abf4eaac7715cfed3413b8d5 = L.circle(
+            var circle_64216646afcb0808d50f1d3e99b8bad5 = L.circle(
                 [49.916666666666664, 80.95],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_1990f416ead33aeaa81d6da4c81e33d5 = L.popup({
+        var popup_853c8f92c54af07e03c3004b34ee72f1 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_19ec24a188305794f2a7df356d64b4f5 = $(`<div id="html_19ec24a188305794f2a7df356d64b4f5" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_1990f416ead33aeaa81d6da4c81e33d5.setContent(html_19ec24a188305794f2a7df356d64b4f5);
+                var html_de304b18e30c3a01139f0d4d7d152bc2 = $(`<div id="html_de304b18e30c3a01139f0d4d7d152bc2" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3200FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_853c8f92c54af07e03c3004b34ee72f1.setContent(html_de304b18e30c3a01139f0d4d7d152bc2);
             
         
 
-        circle_f7345f58abf4eaac7715cfed3413b8d5.bindPopup(popup_1990f416ead33aeaa81d6da4c81e33d5)
+        circle_64216646afcb0808d50f1d3e99b8bad5.bindPopup(popup_853c8f92c54af07e03c3004b34ee72f1)
         ;
 
         
     
     
-            var circle_1114513ae4b171c9acd137d15b32a601 = L.circle(
+            var circle_e228e8a769b4c765a19fe2a7f870f286 = L.circle(
                 [51.759166666666665, 71.10194444444444],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_5b769a57fa6cf35fa27217d8a8f602e2 = L.popup({
+        var popup_b9bf2d1b60a919ad78b610470fcaa3bf = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_774c1f381f6f3eef7002c46676b79273 = $(`<div id="html_774c1f381f6f3eef7002c46676b79273" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_5b769a57fa6cf35fa27217d8a8f602e2.setContent(html_774c1f381f6f3eef7002c46676b79273);
+                var html_5ece781c5768324858e3acbff24417ef = $(`<div id="html_5ece781c5768324858e3acbff24417ef" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1000 м<br><b>Абсолютная высота:</b> 4700FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_b9bf2d1b60a919ad78b610470fcaa3bf.setContent(html_5ece781c5768324858e3acbff24417ef);
             
         
 
-        circle_1114513ae4b171c9acd137d15b32a601.bindPopup(popup_5b769a57fa6cf35fa27217d8a8f602e2)
+        circle_e228e8a769b4c765a19fe2a7f870f286.bindPopup(popup_b9bf2d1b60a919ad78b610470fcaa3bf)
         ;
 
         
     
     
-            var circle_6031c44716925905ccad48abee949c76 = L.circle(
+            var circle_ac42e8bf8a7009902cad0688c1ea64bd = L.circle(
                 [53.44083333333333, 69.25166666666667],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_5b551c6f7fd067a4c27ae994ad6bbec9 = L.popup({
+        var popup_016246e5e2ef744249e9dd90fe0225b8 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_7b625536c44fdf1e16fda158348a5eff = $(`<div id="html_7b625536c44fdf1e16fda158348a5eff" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Два раза внеделю,  с 04.00 до 11.00</div>`)[0];
-                popup_5b551c6f7fd067a4c27ae994ad6bbec9.setContent(html_7b625536c44fdf1e16fda158348a5eff);
+                var html_0a6b9d0599b41578e4189d05a15839a2 = $(`<div id="html_0a6b9d0599b41578e4189d05a15839a2" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 2500FT<br><b>Время работы:</b> Два раза внеделю,  с 04.00 до 11.00</div>`)[0];
+                popup_016246e5e2ef744249e9dd90fe0225b8.setContent(html_0a6b9d0599b41578e4189d05a15839a2);
             
         
 
-        circle_6031c44716925905ccad48abee949c76.bindPopup(popup_5b551c6f7fd067a4c27ae994ad6bbec9)
+        circle_ac42e8bf8a7009902cad0688c1ea64bd.bindPopup(popup_016246e5e2ef744249e9dd90fe0225b8)
         ;
 
         
     
     
-            var circle_a413d9c94bec6dbbdefe3eff2f98022e = L.circle(
+            var circle_91e42b28c560b0c25d7a72b94dbd53bf = L.circle(
                 [47.833333333333336, 67.36666666666666],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_4c82809e0901d965465b7dc4f2a1aa6f = L.popup({
+        var popup_aecdb4b666d5c6ab69158b3b8225fcd0 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_c84b891ec99a017477beccea5a31afb7 = $(`<div id="html_c84b891ec99a017477beccea5a31afb7" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3100FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
-                popup_4c82809e0901d965465b7dc4f2a1aa6f.setContent(html_c84b891ec99a017477beccea5a31afb7);
+                var html_64fc3f302db89ad58a13503a6ca34fa3 = $(`<div id="html_64fc3f302db89ad58a13503a6ca34fa3" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-500 м<br><b>Абсолютная высота:</b> 3100FT<br><b>Время работы:</b> Ежедневно, с 08.00 до 10.00</div>`)[0];
+                popup_aecdb4b666d5c6ab69158b3b8225fcd0.setContent(html_64fc3f302db89ad58a13503a6ca34fa3);
             
         
 
-        circle_a413d9c94bec6dbbdefe3eff2f98022e.bindPopup(popup_4c82809e0901d965465b7dc4f2a1aa6f)
+        circle_91e42b28c560b0c25d7a72b94dbd53bf.bindPopup(popup_aecdb4b666d5c6ab69158b3b8225fcd0)
         ;
 
         
     
     
-            var circle_cea4d4a952d073688caa9ffe620c1326 = L.circle(
+            var circle_929b28a3165c6f71b147b484b77c7b1a = L.circle(
                 [42.9675, 72.72583333333334],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_4346e9dc81d0987977e38a6e61261dfa = L.popup({
+        var popup_85530bc8ea4af66e5e8f6145b74abe33 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_31feaf88eb4f56dd23d183565a2515ab = $(`<div id="html_31feaf88eb4f56dd23d183565a2515ab" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8900 FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
-                popup_4346e9dc81d0987977e38a6e61261dfa.setContent(html_31feaf88eb4f56dd23d183565a2515ab);
+                var html_5e6d66e8be0b6495e112cd4df8e03adf = $(`<div id="html_5e6d66e8be0b6495e112cd4df8e03adf" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-2000 м<br><b>Абсолютная высота:</b> 8900 FT<br><b>Время работы:</b> Вводится в действие по НОТАМ</div>`)[0];
+                popup_85530bc8ea4af66e5e8f6145b74abe33.setContent(html_5e6d66e8be0b6495e112cd4df8e03adf);
             
         
 
-        circle_cea4d4a952d073688caa9ffe620c1326.bindPopup(popup_4346e9dc81d0987977e38a6e61261dfa)
+        circle_929b28a3165c6f71b147b484b77c7b1a.bindPopup(popup_85530bc8ea4af66e5e8f6145b74abe33)
         ;
 
         
     
     
-            var circle_b0a7b0a34e6f7a33c43ea679259bed88 = L.circle(
+            var circle_238fd862973cec291eb4bd8510141cb0 = L.circle(
                 [42.70111111111111, 70.95138888888889],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_6e8df0a5b172f818e547e6018201a51a = L.popup({
+        var popup_b4fdc4a407118b49a994aaa3530bd0e4 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_a8883149247718c8eb2132999955651a = $(`<div id="html_a8883149247718c8eb2132999955651a" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 140FL<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
-                popup_6e8df0a5b172f818e547e6018201a51a.setContent(html_a8883149247718c8eb2132999955651a);
+                var html_b60ca466fddf826d3c8b2f4483326805 = $(`<div id="html_b60ca466fddf826d3c8b2f4483326805" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-3000 м<br><b>Абсолютная высота:</b> 140FL<br><b>Время работы:</b> Постоянно, согласно графика</div>`)[0];
+                popup_b4fdc4a407118b49a994aaa3530bd0e4.setContent(html_b60ca466fddf826d3c8b2f4483326805);
             
         
 
-        circle_b0a7b0a34e6f7a33c43ea679259bed88.bindPopup(popup_6e8df0a5b172f818e547e6018201a51a)
+        circle_238fd862973cec291eb4bd8510141cb0.bindPopup(popup_b4fdc4a407118b49a994aaa3530bd0e4)
         ;
 
         
     
     
-            var circle_c8071f6a49aa17e5b8c83966e362648b = L.circle(
+            var circle_c730521a6b921a74baa4ba67deb17241 = L.circle(
                 [49.78527777777778, 81.58972222222222],
                 {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3700, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
+            ).addTo(map_0a13a82e5597b170799081c4a7df0ad7);
         
     
-        var popup_5875c2bb6306897b94f0cf1beb5c083a = L.popup({
+        var popup_5edcf2fd1ee0295ab93211c3969a7106 = L.popup({
   "maxWidth": 400,
 });
 
         
             
-                var html_02887575b32a46955501bfa2e74a684f = $(`<div id="html_02887575b32a46955501bfa2e74a684f" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1400 м<br><b>Абсолютная высота:</b> 4200 FT<br><b>Время работы:</b> Вводится  в действие  по НОТАМ</div>`)[0];
-                popup_5875c2bb6306897b94f0cf1beb5c083a.setContent(html_02887575b32a46955501bfa2e74a684f);
+                var html_83272967aba322a8f020fc7cfbabcf52 = $(`<div id="html_83272967aba322a8f020fc7cfbabcf52" style="width: 100.0%; height: 100.0%;"><b>Тип зоны:</b> Зона ограничения полетов<br><b>Вертикальные границы:</b> 0-1400 м<br><b>Абсолютная высота:</b> 4200 FT<br><b>Время работы:</b> Вводится  в действие  по НОТАМ</div>`)[0];
+                popup_5edcf2fd1ee0295ab93211c3969a7106.setContent(html_83272967aba322a8f020fc7cfbabcf52);
             
         
 
-        circle_c8071f6a49aa17e5b8c83966e362648b.bindPopup(popup_5875c2bb6306897b94f0cf1beb5c083a)
-        ;
-
-        
-    
-    
-            var circle_56f115ff1f83a5be5d3f8bcfe237d668 = L.circle(
-                [51.0222, 71.4669],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
-        
-    
-        var popup_7e69f587463641dc036225a4a6136aa7 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_bbf84015292d95460367950849c38a37 = $(`<div id="html_bbf84015292d95460367950849c38a37" style="width: 100.0%; height: 100.0%;">Нур-Султан (NQZ) — запретная зона аэропорта</div>`)[0];
-                popup_7e69f587463641dc036225a4a6136aa7.setContent(html_bbf84015292d95460367950849c38a37);
-            
-        
-
-        circle_56f115ff1f83a5be5d3f8bcfe237d668.bindPopup(popup_7e69f587463641dc036225a4a6136aa7)
-        ;
-
-        
-    
-    
-            var circle_6af4f8467162586af7eec1f7a481d0be = L.circle(
-                [43.3519, 77.0405],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
-        
-    
-        var popup_62dbb766fd876c76b1a5ab85f01f4528 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_3ce9de89a822dd4450d915ad6464929d = $(`<div id="html_3ce9de89a822dd4450d915ad6464929d" style="width: 100.0%; height: 100.0%;">Алматы (ALA) — запретная зона аэропорта</div>`)[0];
-                popup_62dbb766fd876c76b1a5ab85f01f4528.setContent(html_3ce9de89a822dd4450d915ad6464929d);
-            
-        
-
-        circle_6af4f8467162586af7eec1f7a481d0be.bindPopup(popup_62dbb766fd876c76b1a5ab85f01f4528)
-        ;
-
-        
-    
-    
-            var circle_85ae77055270bebd28bb1f4d76cc36fb = L.circle(
-                [42.3642, 69.4789],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
-        
-    
-        var popup_1021df08ba09aa30d20555923ecd9895 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_db6584e19cab9b5d5233615af250faf0 = $(`<div id="html_db6584e19cab9b5d5233615af250faf0" style="width: 100.0%; height: 100.0%;">Шымкент (CIT) — запретная зона аэропорта</div>`)[0];
-                popup_1021df08ba09aa30d20555923ecd9895.setContent(html_db6584e19cab9b5d5233615af250faf0);
-            
-        
-
-        circle_85ae77055270bebd28bb1f4d76cc36fb.bindPopup(popup_1021df08ba09aa30d20555923ecd9895)
-        ;
-
-        
-    
-    
-            var circle_895d31ce95212c11ae247518ece2f529 = L.circle(
-                [50.2458, 57.2067],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
-        
-    
-        var popup_870a4cc54a6737ba2ec794fe990f932f = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_130beee08877ab45ab6d3909dd6fc78f = $(`<div id="html_130beee08877ab45ab6d3909dd6fc78f" style="width: 100.0%; height: 100.0%;">Актобе (AKX) — запретная зона аэропорта</div>`)[0];
-                popup_870a4cc54a6737ba2ec794fe990f932f.setContent(html_130beee08877ab45ab6d3909dd6fc78f);
-            
-        
-
-        circle_895d31ce95212c11ae247518ece2f529.bindPopup(popup_870a4cc54a6737ba2ec794fe990f932f)
-        ;
-
-        
-    
-    
-            var circle_5b6e067c67bdc52fcc082c8e4df48e4a = L.circle(
-                [43.8601, 51.0908],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
-            ).addTo(map_5ccc272ada7c49c6a033a01f46bd4313);
-        
-    
-        var popup_36c80ae337bdbc8c7d3cec7f5c6f5454 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_38cc47657436acad0c58db89f9568e45 = $(`<div id="html_38cc47657436acad0c58db89f9568e45" style="width: 100.0%; height: 100.0%;">Актау (SCO) — запретная зона аэропорта</div>`)[0];
-                popup_36c80ae337bdbc8c7d3cec7f5c6f5454.setContent(html_38cc47657436acad0c58db89f9568e45);
-            
-        
-
-        circle_5b6e067c67bdc52fcc082c8e4df48e4a.bindPopup(popup_36c80ae337bdbc8c7d3cec7f5c6f5454)
+        circle_c730521a6b921a74baa4ba67deb17241.bindPopup(popup_5edcf2fd1ee0295ab93211c3969a7106)
         ;
 
         
@@ -2356,16 +2245,16 @@
               edit: {},
             }
                 // FeatureGroup is to store editable layers.
-                var drawnItems_draw_control_62dfd9d7bfce071679a29a425301eb69 =
+                var drawnItems_draw_control_f6fe936dcf5ad1e88442f62f4d1218b6 =
                     new L.featureGroup().addTo(
-                        map_5ccc272ada7c49c6a033a01f46bd4313
+                        map_0a13a82e5597b170799081c4a7df0ad7
                     );
 
-            options.edit.featureGroup = drawnItems_draw_control_62dfd9d7bfce071679a29a425301eb69;
-            var draw_control_62dfd9d7bfce071679a29a425301eb69 = new L.Control.Draw(
+            options.edit.featureGroup = drawnItems_draw_control_f6fe936dcf5ad1e88442f62f4d1218b6;
+            var draw_control_f6fe936dcf5ad1e88442f62f4d1218b6 = new L.Control.Draw(
                 options
-            ).addTo( map_5ccc272ada7c49c6a033a01f46bd4313 );
-            map_5ccc272ada7c49c6a033a01f46bd4313.on(L.Draw.Event.CREATED, function(e) {
+            ).addTo( map_0a13a82e5597b170799081c4a7df0ad7 );
+            map_0a13a82e5597b170799081c4a7df0ad7.on(L.Draw.Event.CREATED, function(e) {
                 var layer = e.layer,
                     type = e.layerType;
                 var coords = JSON.stringify(layer.toGeoJSON());
@@ -2373,15 +2262,15 @@
                     alert(coords);
                     console.log(coords);
                 });
-                drawnItems_draw_control_62dfd9d7bfce071679a29a425301eb69.addLayer(layer);
+                drawnItems_draw_control_f6fe936dcf5ad1e88442f62f4d1218b6.addLayer(layer);
             });
-            map_5ccc272ada7c49c6a033a01f46bd4313.on('draw:created', function(e) {
-                drawnItems_draw_control_62dfd9d7bfce071679a29a425301eb69.addLayer(e.layer);
+            map_0a13a82e5597b170799081c4a7df0ad7.on('draw:created', function(e) {
+                drawnItems_draw_control_f6fe936dcf5ad1e88442f62f4d1218b6.addLayer(e.layer);
             });
 
             
             document.getElementById('export').onclick = function(e) {
-                var data = drawnItems_draw_control_62dfd9d7bfce071679a29a425301eb69.toGeoJSON();
+                var data = drawnItems_draw_control_f6fe936dcf5ad1e88442f62f4d1218b6.toGeoJSON();
                 var convertedData = 'text/json;charset=utf-8,'
                     + encodeURIComponent(JSON.stringify(data));
                 document.getElementById('export').setAttribute(
